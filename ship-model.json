@@ -1,0 +1,183 @@
+{
+  "shipId": "SDC-468",
+  "name": "Archibald Henderson",
+  "registry": "468",
+  "classId": "valkyrie_dropship",
+
+  "chassis": {
+    "sizeClass": 3,
+    "hullMaximum": 36,
+    "structureMaximum": 10,
+    "baseThrust": 5,
+    "baseRotation": 2,
+    "heatMaximum": 12,
+    "baseReactorOutput": 12,
+    "baseSignature": 6
+  },
+
+  "position": {
+    "hexQ": 12,
+    "hexR": 8,
+    "facing": 2,
+    "speed": 4,
+    "driftDirection": 2
+  },
+
+  "resources": {
+    "powerGenerated": 12,
+    "powerUnallocated": 0,
+    "heatCurrent": 5,
+    "heatMaximum": 12,
+    "fuelCurrent": 42
+  },
+
+  "powerAllocation": {
+    "propulsion": 4,
+    "weapons": 3,
+    "sensors": 2,
+    "damageControl": 1,
+    "lifeSupport": 1,
+    "reserve": 1
+  },
+
+  "integrity": {
+    "hullCurrent": 30,
+    "hullMaximum": 36,
+    "structureCurrent": 10,
+    "structureMaximum": 10
+  },
+
+  "armor": {
+    "fore": {
+      "current": 8,
+      "maximum": 10
+    },
+    "aft": {
+      "current": 4,
+      "maximum": 6
+    },
+    "port": {
+      "current": 6,
+      "maximum": 8
+    },
+    "starboard": {
+      "current": 7,
+      "maximum": 8
+    }
+  },
+
+  "systems": [
+    {
+      "systemId": "reactor_01",
+      "systemType": "reactor",
+      "location": "engineering",
+      "condition": 10,
+      "maximumCondition": 10,
+      "operationalState": "operational",
+      "powerRequired": 0,
+      "heatGenerated": 2
+    },
+    {
+      "systemId": "engine_01",
+      "systemType": "main_engine",
+      "location": "aft",
+      "condition": 7,
+      "maximumCondition": 10,
+      "operationalState": "degraded",
+      "powerRequired": 3,
+      "heatGenerated": 2
+    },
+    {
+      "systemId": "sensors_01",
+      "systemType": "sensor_array",
+      "location": "bow",
+      "condition": 8,
+      "maximumCondition": 8,
+      "operationalState": "operational",
+      "powerRequired": 2,
+      "heatGenerated": 0
+    }
+  ],
+
+  "weapons": [
+    {
+      "mountId": "weapon_01",
+      "weaponTypeId": "medium_coilgun",
+      "location": "bow",
+      "firingArc": ["fore"],
+      "condition": 6,
+      "maximumCondition": 6,
+      "operationalState": "operational",
+      "ammunitionCurrent": 14,
+      "ammunitionMaximum": 20,
+      "cooldown": 0
+    },
+    {
+      "mountId": "weapon_02",
+      "weaponTypeId": "point_defense_laser",
+      "location": "dorsal",
+      "firingArc": ["fore", "aft", "port", "starboard"],
+      "condition": 4,
+      "maximumCondition": 4,
+      "operationalState": "operational",
+      "cooldown": 0
+    }
+  ],
+
+  "crewDepartments": [
+    {
+      "departmentType": "command",
+      "skill": 3,
+      "activePersonnel": 5,
+      "fatigue": 1,
+      "morale": 4
+    },
+    {
+      "departmentType": "engineering",
+      "skill": 4,
+      "activePersonnel": 12,
+      "fatigue": 2,
+      "morale": 3
+    },
+    {
+      "departmentType": "gunnery",
+      "skill": 3,
+      "activePersonnel": 8,
+      "fatigue": 0,
+      "morale": 4
+    }
+  ],
+
+  "command": {
+    "commandRating": 3,
+    "currentCommandPoints": 2,
+    "commandPointReserve": 5,
+    "baseCommandPointGeneration": 3,
+    "effectiveCommandPointGeneration": 3,
+    "initiativeModifier": 0,
+    "commandDisruption": 0,
+    "stance": "balanced",
+    "primaryOrder": "maintain_pursuit"
+  },
+
+  "criticalEffects": [
+    {
+      "effectId": "critical_01",
+      "effectType": "engine_misalignment",
+      "affectedSystemId": "engine_01",
+      "severity": 1,
+      "repairDifficulty": 2,
+      "contained": false
+    }
+  ],
+
+  "statusEffects": [
+    {
+      "statusId": "status_01",
+      "type": "target_locked",
+      "sourceId": "enemy_04",
+      "severity": 2,
+      "remainingDuration": 1
+    }
+  ]
+}
