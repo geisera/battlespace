@@ -5,6 +5,7 @@
 2. Allocation Phase
 3. Action Phase 1
 4. Action Phase 2
+5. Reaction Phase
 
 Each combat round is resolved in five phases.
 
@@ -76,7 +77,6 @@ When activated, a ship chooses one of the following:
 - Maneuver
 - Attack
 - Minor Action
-- Two Minor Actions
 
 Resolve the chosen action completely before the next ship activates.
 
@@ -91,7 +91,6 @@ Each ship again chooses one of the following:
 - Maneuver
 - Attack
 - Minor Action
-- Two Minor Actions
 
 A ship may choose the same action type in both Action Phases, provided it can pay all required power costs.
 
