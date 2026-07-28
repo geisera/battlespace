@@ -1,6 +1,10 @@
 # Starship Tactical Combat Rules
 
 ## Sequence of Play
+1. Initiative Phase
+2. Allocation Phase
+3. Action Phase 1
+4. Action Phase 2
 
 Each combat round is resolved in five phases.
 
@@ -172,5 +176,27 @@ The captain may move his ship a number of spaces equal to the maneuver points as
 More massive ships require more points to move, and to turn.
 
 ### Attack
-### Damage control
-### Divert power
+### Minor actions
+**Power and Systems**
+- Reroute power from one allocation to another
+
+**Shields**
+- Reinforce shield emitter
+
+**Weapons**
+- Overcharge torpedo
+
+**Sensors and EW**
+- Break enemy taget lock
+
+**Propulsion and Maneuver**
+- Adjust heading
+
+**Damage Control**
+- Repair system
+
+**Commad and Crew**
+- Set stance
+
+**Utility Actions**
+- Launch probe
