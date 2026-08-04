@@ -24,6 +24,7 @@ This means a ship that acts early in the first Action Phase acts late in the sec
 ***Note: Consider additional initiative check for action phase 2***
 
 Resolve tied Initiative Scores by comparing Command Rating. If still tied, reroll between the tied ships.
+---
 
 ### 2. Allocation Phase
 
