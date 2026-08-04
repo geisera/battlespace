@@ -74,12 +74,12 @@ A ship may choose the same action type in both Action Phases, provided it can pa
 
 For example, a ship may:
 
-Maneuver twice
-Attack twice with different powered weapons
-Attack twice with the same weapon if that weapon can fire more than once
-Maneuver and then Attack
-Attack and then Maneuver
-Perform up to four Minor Actions
+> Maneuver twice
+> Attack twice with different powered weapons
+> Attack twice with the same weapon if that weapon can fire more than once
+> Maneuver and then Attack
+>Attack and then Maneuver
+> Perform up to four Minor Actions
 
 ---
 
