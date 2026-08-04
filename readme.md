@@ -42,34 +42,6 @@ Power remains assigned until the next Allocation Phase unless rerouted by a rule
 
 The total Power allocated cannot exceed the ship’s current Reactor Output.
 
-**Propulsion**
-
-Propulsion Power is spent to perform Maneuver actions and movement reactions.
-
-Each Maneuver action normally costs 1 Propulsion Power.
-
-Maneuver actions include ship movement to an adjacent hex. And, turning the ship to a new heading.
-
-**Shields**
-
-Power is assigned separately to the ship’s six shield emitter facings.
-
-A shield emitter must receive at least 1 Power to operate and regenerate normally.
-
-Additional Power may improve Shield Rating, Shield Points, or Regeneration according to the shield system’s profile.
-
-**Weapons**
-
-Each weapon or weapon group must receive enough Power to fire.
-
-Power is spent when the weapon attacks. Spent Weapon Power cannot be used again during the same round.
-
-**Reserve**
-
-Reserve Power is not assigned to a specific system.
-
-It may be used for reactions, emergency reinforcement, or power rerouting when permitted by a rule.
-
 ---
 
 ### 3. Action Phase 1
@@ -211,3 +183,31 @@ More massive ships require more points to move, and to turn.
 
 **Utility Actions**
 - Launch probe
+
+**Propulsion**
+
+Propulsion Power is spent to perform Maneuver actions and movement reactions.
+
+Each Maneuver action normally costs 1 Propulsion Power.
+
+Maneuver actions include ship movement to an adjacent hex. And, turning the ship to a new heading.
+
+**Shields**
+
+Power is assigned separately to the ship’s six shield emitter facings.
+
+A shield emitter must receive at least 1 Power to operate and regenerate normally.
+
+Additional Power may improve Shield Rating, Shield Points, or Regeneration according to the shield system’s profile.
+
+**Weapons**
+
+Each weapon or weapon group must receive enough Power to fire.
+
+Power is spent when the weapon attacks. Spent Weapon Power cannot be used again during the same round.
+
+**Reserve**
+
+Reserve Power is not assigned to a specific system.
+
+It may be used for reactions, emergency reinforcement, or power rerouting when permitted by a rule.
