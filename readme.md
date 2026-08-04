@@ -109,6 +109,8 @@ Maneuver and then Attack
 Attack and then Maneuver
 Perform up to four Minor Actions
 
+---
+
 ### 5. Reaction Phase
 
 ---
