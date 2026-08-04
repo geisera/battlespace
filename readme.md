@@ -70,6 +70,8 @@ Reserve Power is not assigned to a specific system.
 
 It may be used for reactions, emergency reinforcement, or power rerouting when permitted by a rule.
 
+---
+
 ### 3. Action Phase 1
 
 Ships activate from highest Initiative to lowest.
@@ -83,6 +85,8 @@ When activated, a ship chooses one of the following:
 Resolve the chosen action completely before the next ship activates.
 
 Damage and other effects take effect immediately.
+
+---
 
 ### 4. Action Phase 2
 
