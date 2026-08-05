@@ -3,8 +3,8 @@
 ![Battlespace Banner 3](assets/battlespace-banner-3.png)
 
 
-
 > "The battlefield is a scene of constant chaos. The winner will be the one who controls that > > chaos, both his own and the enemy's."
+>
 > — Napoleon Bonaparte
 
 ## Table of Contents
