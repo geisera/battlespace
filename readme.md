@@ -1,6 +1,16 @@
 # BATTLESPACE
 ### Vector. Power. Silence. Fire.
 
+## Table of Contents
+
+- [Combat](combat.md)
+- [Maneuver](maneuver.md)
+- [Minor Actions](minor-actions.md)
+- [Play Sequence](play-sequence.md)
+- [Sequence of Play](sequence-of-play.md)
+- [Ship Construction](ship-construction.md)
+- [Ship Model](ship-model.json)
+
 Space doesn't care about your plans.
 
 There's no up. No drag. No slowing down because you're scared. Your ship is a bottle of heat and thrust hurtling through the dark, and every burn you make writes a promise you can't take back. In **Battlespace**, momentum is destiny — commit to a vector, and physics will collect.
