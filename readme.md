@@ -10,7 +10,7 @@
 - [Minor Actions](minor-actions.md)
 - [Ship Construction](ship-construction.md)
 
-# BATTLESPACE
+--- 
 
 > "The battlefield is a scene of constant chaos. The winner will be the one who controls that > > chaos, both his own and the enemy's."
 > — Napoleon Bonaparte
