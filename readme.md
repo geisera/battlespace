@@ -20,6 +20,10 @@
 
 --- 
 
+**Battlespace** is a game of hard choices and hard combat. 
+
+Power is finite. Systems are hungry. The captain who knows when to starve the shields and flood the weapons, when to burn hard for position and when to hold the range, controls the fight. 
+
 Your ship generates only so much power.
 
 In this turn, it can't do everything. 
@@ -27,10 +31,6 @@ In this turn, it can't do everything.
 Feed the engines and you'll own the geometry of the fight. Feed the weapons and you'll hit harder than the enemy believed possible. Feed the shields and you'll survive a mistake. 
 
 But you cannot feed them all, and the allocation you choose is a confession of your intent *if the enemy is sharp enough to read it.*
-
-**Battlespace** is a game of hard choices and hard combat. 
-
-Power is finite. Systems are hungry. The captain who knows when to starve the shields and flood the weapons, when to burn hard for position and when to hold the range, controls the fight. 
 
 There are no safe allocations. Only bets you haven't lost yet.
 
