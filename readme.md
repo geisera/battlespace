@@ -54,11 +54,7 @@ And neither knows which one he is until the orders play out.
 
 **Fight the mind.** Spoof transponders. Jam their coordination. Pre-commit battle drills that trigger automatically while they're still guessing. Make them defend against the ship you *aren't*.
 
-There's no dumb luck to hide behind and no action economy to exploit, only two admirals, sealed orders, and the merciless honesty of momentum.
-
-Out-think. Out-allocate. Out-maneuver.
-
-**Battlespace. The reactor decides who deserves to win. You decide where it goes.**
+Out-think. Out fight. Out-maneuver.
 
 ---
 
