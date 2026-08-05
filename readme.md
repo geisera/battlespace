@@ -1,5 +1,7 @@
 # BATTLESPACE
-### Vector. Power. Silence. Fire.
+
+> "The battlefield is a scene of constant chaos. The winner will be the one who controls that > > chaos, both his own and the enemy's."
+> — Napoleon Bonaparte
 
 ## Table of Contents
 
@@ -11,9 +13,6 @@
 - [Ship Construction](ship-construction.md)
 
 --- 
-
-> "The battlefield is a scene of constant chaos. The winner will be the one who controls that > > chaos, both his own and the enemy's."
-> - Napoleon Bonaparte
 
 Your ship generates only so much power.
 
