@@ -22,11 +22,7 @@
 
 **Battlespace** is a game of hard choices and hard combat. 
 
-Your ship generates only so much power.
-
-Systems are greedy. The captain who knows when to starve the shields and flood the weapons, when to burn hard for position and when to hold the range, controls the fight. 
-
-In this turn, it can't do everything. There are no safe allocations. Only bets you haven't lost yet.
+Your ship generates only so much power. The captain who knows when to starve the shields and flood the weapons, when to burn hard for position and when to hold the range, controls the fight. 
 
 Every decision happens *blind* until someone seizes the initiative. Power is allocated simultaneously, but the captain who wins initiative gets to watch the enemy commit before showing his own hand.
 
@@ -41,21 +37,6 @@ But mice learn.
 Spoof a transponder. Jam his sensors. Feed him a decoy and let him waste his alpha strike on a ghost while you slide into his blind arc. 
 
 Now who's the cat?
-
-Roles can reverse in a single turn. 
-
-And neither knows which one he is until the orders play out.
-
-**Battlespace** rewards the real tacticians:
-
-**Fight the power curve.** Reroute on the fly. Bank capacitors for the alpha strike. Bleed one system to save another. The reactor is your true weapon. Everything else just delivers it.
-
-**Fight the geometry.** Angle shields into the threat arc. Cross the enemy's T. Force the engagement at your optimal range and deny them theirs.
-
-**Fight the mind.** Spoof transponders. Jam their coordination. Pre-commit battle drills that trigger automatically while they're still guessing. Make them defend against the ship you *aren't*.
-
-Out-think. Out fight. Out-maneuver.
-
 ---
 
 *For 2+ players. Simultaneous hidden orders, Newtonian vector movement, deep power management, and electronic warfare that turns every sensor contact into a question. Bring a plan, and a backup plan for when they read it.*
