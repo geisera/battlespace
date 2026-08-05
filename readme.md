@@ -3,13 +3,12 @@
 
 ## Table of Contents
 
-- [Combat](combat.md)
-- [Maneuver](maneuver.md)
-- [Minor Actions](minor-actions.md)
-- [Play Sequence](play-sequence.md)
 - [Sequence of Play](sequence-of-play.md)
+- [Maneuver](maneuver.md)
+- [Combat](combat.md)
+- [Damge](battle-damage.md)
+- [Minor Actions](minor-actions.md)
 - [Ship Construction](ship-construction.md)
-- [Ship Model](ship-model.json)
 
 Space doesn't care about your plans.
 
