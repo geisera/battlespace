@@ -5,6 +5,8 @@
 >
 > — Napoleon Bonaparte
 
+---
+
 ## Table of Contents
 
 * [Sequence of Play](sequence-of-play.md)
