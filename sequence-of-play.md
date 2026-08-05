@@ -7,6 +7,8 @@
 
 ---
 
+<div align="center">
+
 ## Table of Contents
 
 * [Sequence of Play](sequence-of-play.md)
@@ -17,5 +19,5 @@
 * [Ship Construction](ship-construction.md)
 * [Weapons](weapons.md)
 * [Auxiliary Equipment](equipment.md)
-
+</div>
 --- 
