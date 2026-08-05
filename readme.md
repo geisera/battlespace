@@ -7,14 +7,14 @@
 
 ## Table of Contents
 
-- [Sequence of Play](sequence-of-play.md)
-- [Maneuver](maneuver.md)
-- [Combat](combat.md)
-- [Damge](battle-damage.md)
-- [Minor Actions](minor-actions.md)
-- [Ship Construction](ship-construction.md)
-- [Weapons](weapons.md)
-- [Auxiliary Equipment](equipment.md)
+* [Sequence of Play](sequence-of-play.md)
+* [Maneuver](maneuver.md)
+* [Combat](combat.md)
+* [Damge](battle-damage.md)
+* [Minor Actions](minor-actions.md)
+* [Ship Construction](ship-construction.md)
+* [Weapons](weapons.md)
+* [Auxiliary Equipment](equipment.md)
 
 --- 
 
