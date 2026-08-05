@@ -37,6 +37,7 @@ But mice learn.
 Spoof a transponder. Jam his sensors. Feed him a decoy and let him waste his alpha strike on a ghost while you slide into his blind arc. 
 
 Now who's the cat?
+
 ---
 
 *For 2+ players. Simultaneous hidden orders, Newtonian vector movement, deep power management, and electronic warfare that turns every sensor contact into a question. Bring a plan, and a backup plan for when they read it.*
