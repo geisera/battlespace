@@ -13,7 +13,7 @@
 --- 
 
 > "The battlefield is a scene of constant chaos. The winner will be the one who controls that > > chaos, both his own and the enemy's."
-> — Napoleon Bonaparte
+> - Napoleon Bonaparte
 
 Your ship generates only so much power.
 
@@ -25,19 +25,19 @@ But you cannot feed them all, and the allocation you choose is a confession of y
 
 **Battlespace** is a game of hard choices and hard combat. 
 
-Power is finite. Systems are hungry. The captain who knows when to starve the shields and flood the weapons, when to burn hard for position and when to hold the range — controls the fight. 
+Power is finite. Systems are hungry. The captain who knows when to starve the shields and flood the weapons, when to burn hard for position and when to hold the range, controls the fight. 
 
 There are no safe allocations. Only bets you haven't lost yet.
 
-And every decision happens *blind* — until someone seizes the initiative. Power is allocated simultaneously, but the captain who wins initiative gets to watch the enemy commit before showing his own hand.
+And every decision happens *blind* until someone seizes the initiative. Power is allocated simultaneously, but the captain who wins initiative gets to watch the enemy commit before showing his own hand.
 
 This is where **Battlespace** becomes a hunt. 
 
 Take initiative and you're the cat: watch the mouse spend its power, then answer with the perfect counter. 
 
-Lose it and you'd better start lying — jam his sensors, spoof your transponder, seed the void with decoys until he can't tell your ship from your shadow. 
+Lose it and you'd better start lying: jam his sensors, spoof your transponder, seed the void with decoys until he can't tell your ship from your shadow. 
 
-A cat that pounces on the wrong shadow is just a mouse with a bruised ego and an empty magazine.The captain with initiative is the cat — she sees the mouse move first, adjusts, and closes the trap. 
+A cat that pounces on the wrong shadow is just a mouse with a bruised ego and an empty magazine.The captain with initiative is the cat. She sees the mouse move first, adjusts, and closes the trap. 
 
 But mice learn. 
 
@@ -55,13 +55,13 @@ The answers arrive at the moment of revelation, when torpedoes are already in th
 
 This is where **Battlespace** rewards the real tacticians:
 
-**Fight the power curve.** Reroute on the fly. Bank capacitors for the alpha strike. Bleed one system to save another. The reactor is your true weapon — everything else just delivers it.
+**Fight the power curve.** Reroute on the fly. Bank capacitors for the alpha strike. Bleed one system to save another. The reactor is your true weapon. Everything else just delivers it.
 
 **Fight the geometry.** Angle shields into the threat arc. Cross the enemy's T. Force the engagement at your optimal range and deny them theirs.
 
 **Fight the mind.** Spoof transponders. Jam their coordination. Pre-commit battle drills that trigger automatically while they're still guessing. Make them defend against the ship you *aren't*.
 
-There's no dumb luck to hide behind and no action economy to exploit — only two admirals, sealed orders, and the merciless honesty of momentum.
+There's no dumb luck to hide behind and no action economy to exploit, only two admirals, sealed orders, and the merciless honesty of momentum.
 
 Out-think. Out-allocate. Out-maneuver.
 
@@ -69,4 +69,4 @@ Out-think. Out-allocate. Out-maneuver.
 
 ---
 
-*For 2+ players. Simultaneous hidden orders, Newtonian vector movement, deep power management, and electronic warfare that turns every sensor contact into a question. Bring a plan — and a backup plan for when they read it.*
+*For 2+ players. Simultaneous hidden orders, Newtonian vector movement, deep power management, and electronic warfare that turns every sensor contact into a question. Bring a plan, and a backup plan for when they read it.*
