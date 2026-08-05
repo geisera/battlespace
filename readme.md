@@ -24,7 +24,7 @@
 
 Your ship generates only so much power.
 
-Power is finite. Systems are hungry. The captain who knows when to starve the shields and flood the weapons, when to burn hard for position and when to hold the range, controls the fight. 
+Systems are greedy. The captain who knows when to starve the shields and flood the weapons, when to burn hard for position and when to hold the range, controls the fight. 
 
 In this turn, it can't do everything. There are no safe allocations. Only bets you haven't lost yet.
 
@@ -36,8 +36,6 @@ Take initiative and you're the cat: watch the mouse spend its power, then answer
 
 Lose it and you'd better start lying: jam his sensors, spoof your transponder, seed the void with decoys until he can't tell your ship from your shadow. 
 
-A cat that pounces on the wrong shadow is just a mouse with a bruised ego and an empty magazine.The captain with initiative is the cat. She sees the mouse move first, adjusts, and closes the trap. 
-
 But mice learn. 
 
 Spoof a transponder. Jam his sensors. Feed him a decoy and let him waste his alpha strike on a ghost while you slide into his blind arc. 
@@ -46,13 +44,9 @@ Now who's the cat?
 
 Roles can reverse in a single turn. 
 
-The hunter overcommits to a firing solution that isn't there. The prey dumps everything into engines at the exact moment the pursuer starved his. One captain is reading the board. The other is reading a lie. 
-
 And neither knows which one he is until the orders play out.
 
-The answers arrive at the moment of revelation, when torpedoes are already in the tubes and the geometry is locked.
-
-This is where **Battlespace** rewards the real tacticians:
+**Battlespace** rewards the real tacticians:
 
 **Fight the power curve.** Reroute on the fly. Bank capacitors for the alpha strike. Bleed one system to save another. The reactor is your true weapon. Everything else just delivers it.
 
