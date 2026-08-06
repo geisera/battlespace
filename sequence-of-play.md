@@ -71,13 +71,6 @@ Special rule intent: this phase gives the second player a structured chance to c
 2. Update heat, spent power, cooldown tracks, and damage control progress.
 3. Clear temporary markers and advance turn counter.
 
-## Design Notes
-
-- Allocation commits intent under uncertainty.
-- Initiative decides who opens the tactical exchange.
-- Phase A rewards initiative with timing flexibility; Phase B restores tempo balance with fixed alternating actions.
-- End phase keeps bookkeeping predictable and prevents hidden carryover errors.
-
 ## Table of Contents
 
 * [Sequence of Play](sequence-of-play.md)
