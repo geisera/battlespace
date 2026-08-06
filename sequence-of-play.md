@@ -1,6 +1,6 @@
 ![Battlespace Banner 3](assets/battlespace-banner.png)
 
-[< Back](readme.md)
+[&#128281 Back](readme.md)
 
 ---
 
