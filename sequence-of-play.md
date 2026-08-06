@@ -1,13 +1,79 @@
 ![Battlespace Banner 3](assets/battlespace-banner.png)
 
-
-> The battlefield is a scene of constant chaos. The winner will be the one who controls that chaos, both his own and the enemy's.
->
-> — Napoleon Bonaparte
+[Back to README](readme.md)
 
 ---
 
-<div align="center">
+
+
+## Proposed Sequence of Play
+
+Each game turn is resolved in 6 phases.
+
+### 1. Status Phase
+
+1. Remove expired effects (jams, locks, temporary boosts, etc.).
+2. Apply ongoing effects (fires, flooding, reactor strain, crew disruptions).
+3. Check scenario timers and victory conditions.
+
+### 2. Allocation Phase
+
+1. Each player secretly allocates reactor power to major systems:
+	- Engines
+	- Shields
+	- Weapons
+	- Electronics (ECM/ECCM, sensors, comms)
+2. Players may reserve power as capacitor or emergency power, if allowed by ship systems.
+3. Record allocations on ship sheets, then reveal simultaneously.
+
+### 3. Initiative Phase
+
+1. Each player determines initiative value using current ship state (command rating, sensor quality, thrust posture, electronic warfare modifiers, damage penalties, etc.).
+2. Apply all modifiers and compare totals.
+3. Higher total gains initiative for this turn.
+4. Tie breaker order:
+	- Higher command rating
+	- Lower current heat signature
+	- Scenario priority or previous-turn holder (choose one as a standing rule)
+
+### 4. Action Phase A (Initiative Window)
+
+The initiative holder acts first in this phase.
+
+1. Initiative holder declares and resolves one action group.
+2. Opposing player declares and resolves one action group.
+3. Continue alternating until both players pass consecutively.
+
+Action group options (choose one per group):
+
+- Maneuver action (vector change, rotation, thrust burst)
+- Systems action (reroute, reinforce arc, cooldown, repair order)
+- Electronic action (jam, spoof, lock, scan, break lock)
+- Weapon action (launch, fire battery, point defense assignment)
+- Minor action (crew task, internal prep, decoy deployment)
+
+### 5. Action Phase B (Reaction Window)
+
+The non-initiative player acts first in this phase.
+
+1. Non-initiative player declares and resolves one action group.
+2. Initiative holder declares and resolves one action group.
+3. Continue alternating until both players pass consecutively.
+
+Special rule intent: this phase gives the second player a structured chance to counter and prevents initiative from deciding the entire turn tempo.
+
+### 6. End Phase
+
+1. Resolve delayed effects triggered at end of turn (arriving missiles, timed detonations, drift-only motion steps, etc.).
+2. Update heat, spent power, cooldown tracks, and damage control progress.
+3. Clear temporary markers and advance turn counter.
+
+## Design Notes
+
+- Allocation commits intent under uncertainty.
+- Initiative decides who opens the tactical exchange.
+- Two action phases create tempo swing: one for pressure, one for response.
+- End phase keeps bookkeeping predictable and prevents hidden carryover errors.
 
 ## Table of Contents
 
@@ -19,5 +85,5 @@
 * [Ship Construction](ship-construction.md)
 * [Weapons](weapons.md)
 * [Auxiliary Equipment](equipment.md)
-</div>
+
 --- 
