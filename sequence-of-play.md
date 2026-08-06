@@ -4,8 +4,6 @@
 
 ---
 
-
-
 ## Proposed Sequence of Play
 
 Each game turn is resolved in 6 phases.
@@ -46,9 +44,8 @@ The initiative holder has flexible priority in this phase.
 2. Opposing player then chooses one option:
 	- Act: declare and resolve one action group.
 	- Pass: take no further actions in Phase A.
-3. Continue passing priority back and forth.
-4. A player who passes is done acting for the rest of Phase A.
-5. Phase A ends when both players pass consecutively.
+3. A player who passes is done acting for the rest of Phase A.
+4. Phase A ends when both players pass consecutively.
 
 Action group options (choose one per group):
 
