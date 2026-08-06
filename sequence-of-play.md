@@ -38,11 +38,17 @@ Each game turn is resolved in 6 phases.
 
 ### 4. Action Phase A (Initiative Window)
 
-The initiative holder acts first in this phase.
+The initiative holder has flexible priority in this phase.
 
-1. Initiative holder declares and resolves one action group.
-2. Opposing player declares and resolves one action group.
-3. Continue alternating until both players pass consecutively.
+1. Initiative holder chooses one option:
+	- Act: declare and resolve one action group.
+	- Defer: pass priority to the opposing player without ending participation.
+2. Opposing player then chooses one option:
+	- Act: declare and resolve one action group.
+	- Pass: take no further actions in Phase A.
+3. Continue passing priority back and forth.
+4. A player who passes is done acting for the rest of Phase A.
+5. Phase A ends when both players pass consecutively.
 
 Action group options (choose one per group):
 
@@ -54,13 +60,13 @@ Action group options (choose one per group):
 
 ### 5. Action Phase B (Reaction Window)
 
-The non-initiative player acts first in this phase.
+The non-initiative player acts first in this phase. No defers are allowed.
 
 1. Non-initiative player declares and resolves one action group.
 2. Initiative holder declares and resolves one action group.
 3. Continue alternating until both players pass consecutively.
 
-Special rule intent: this phase gives the second player a structured chance to counter and prevents initiative from deciding the entire turn tempo.
+Special rule intent: this phase gives the second player a structured chance to counter and prevents initiative from deciding the entire turn tempo, while avoiding slowdown from repeated defers.
 
 ### 6. End Phase
 
@@ -72,7 +78,7 @@ Special rule intent: this phase gives the second player a structured chance to c
 
 - Allocation commits intent under uncertainty.
 - Initiative decides who opens the tactical exchange.
-- Two action phases create tempo swing: one for pressure, one for response.
+- Phase A rewards initiative with timing flexibility; Phase B restores tempo balance with fixed alternating actions.
 - End phase keeps bookkeeping predictable and prevents hidden carryover errors.
 
 ## Table of Contents
