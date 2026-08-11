@@ -8,13 +8,12 @@
 
 A ship is the sum of its components. You choose the parts. The parts determine the mass. The mass determines the class — and how much power it takes to move it. Size is a result, not a choice.
 
-Build a ship in five steps:
+Build a ship in four steps:
 
 1. Buy components.
 2. Buy Superstructure to secure them.
 3. Total the Mass.
 4. Derive the ship's characteristics.
-5. Assign crew.
 
 ---
 
@@ -40,8 +39,8 @@ Capacity rises in a straight line. Mass does not. Every step up costs more than 
 | Engine | Reduces the Power cost of Movement Points (Section 5) |
 | Sensor Array | +1 detection range band. Rating also caps Sensor Power. |
 | Cargo / Drop Bay | 2 bay units |
-| Life Support | Supports 1 crew department |
-| Weapon Mount | Mount Rating must equal or exceed the weapon's class |
+
+**Weapons** are bought individually. Each weapon lists its own Mass and Superstructure Cost (see [Weapons](weapons.md)).
 
 #### Reactors
 
@@ -58,7 +57,7 @@ Reactors are chosen for their desired **Output** — the Power the ship generate
 
 Doubling output from 12 to 24 more than triples the reactor's mass. The yard always takes its cut.
 
-**Every ship must carry:** one reactor, one engine, one sensor array, and life support.
+**Every ship must carry:** one reactor, one engine, and one sensor array.
 
 ---
 
@@ -124,16 +123,6 @@ A corvette with a big engine buys movement for pocket change. A battleship pays 
 
 ---
 
-### 6. Assign Crew
-
-Rate the five departments — Command, Engineering, Gunnery, Sensors, Damage Control — from 1 to 5.
-
-* Skill points available: **10 + (2 × Size Class)**.
-* Command Rating may not exceed the Command department's skill.
-* Life Support requires 1 Power per point of its Rating each round. A ship that cannot power life support plus 1 Movement Point is not spaceworthy.
-
----
-
 ### Worked Example
 
 **SDC-468 *Archibald Henderson*, Valkyrie-class dropship**
@@ -143,24 +132,23 @@ Rate the five departments — Command, Engineering, Gunnery, Sensors, Damage Con
 | Reactor | — | 12 Power | 6 | 3 | 9 |
 | Engine | 3 | — | 6 | 3 | 9 |
 | Sensor Array | 2 | — | 3 | 2 | 5 |
-| Medium Coilgun | 2 | — | 3 | 2 | 5 |
-| Point Defense Laser | 1 | — | 1 | 1 | 2 |
+| Medium Coilgun | — | — | 3 | 2 | 5 |
+| Point Defense Laser | — | — | 1 | 1 | 2 |
 | Drop Bay | 2 | 4 units | 3 | 2 | 5 |
-| Life Support | 2 | 2 departments | 3 | 2 | 5 |
 | Armor (32 points) | — | — | 8 | 2 | 10 |
-| **Totals** | | | **33** | **17** | **50** |
+| **Totals** | | | **30** | **15** | **45** |
 
 ```text
-Total Mass     = 33 + 17 = 50
-Mass Factor    = 50 ÷ 10 = 5
+Total Mass     = 30 + 15 = 45
+Mass Factor    = 45 ÷ 10 = 5
 Size Class     = 3          (36–70 band)
 Base Signature = 5
-Structure      = 17 ÷ 2 = 9
-Hull           = 33
+Structure      = 15 ÷ 2 = 8
+Hull           = 30
 Reactor Output = 12
 ```
 
-Her Movement Points cost 5 ÷ 3 = **2 Power each**. At maximum burn — 6 Power to Propulsion — she buys **3 Movement Points**: enough to advance two hexes and swing one hex-side, with 4 Power left after life support. Not enough to run everything. Strip the drop bays and armor and her movement gets cheap. Load her for an assault and every hex costs. The manifest decides.
+Her Movement Points cost 5 ÷ 3 = **2 Power each**. At maximum burn — 6 Power to Propulsion — she buys **3 Movement Points**: enough to advance two hexes and swing one hex-side, with 6 Power left for everything else. Not enough to run it all. Strip the drop bays and armor and her movement gets cheap. Load her for an assault and every hex costs. The manifest decides.
 
 ---
 
