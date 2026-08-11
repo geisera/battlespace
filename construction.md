@@ -122,17 +122,17 @@ Rate the five departments — Command, Engineering, Gunnery, Sensors, Damage Con
 
 **SDC-468 *Archibald Henderson*, Valkyrie-class dropship**
 
-| Component | Rating | Capacity | Mass | Superstructure |
-| --- | ---: | --- | ---: | ---: |
-| Reactor | 3 | 12 Power | 6 | 3 |
-| Engine | 3 | — | 6 | 3 |
-| Sensor Array | 2 | — | 3 | 2 |
-| Medium Coilgun | 2 | — | 3 | 2 |
-| Point Defense Laser | 1 | — | 1 | 1 |
-| Drop Bay | 2 | 4 units | 3 | 2 |
-| Life Support | 2 | 2 departments | 3 | 2 |
-| Armor (32 points) | — | — | 8 | 2 |
-| **Totals** | | | **33** | **17** |
+| Component | Rating | Capacity | Mass | Superstructure | Total Mass |
+| --- | ---: | --- | ---: | ---: | ---: |
+| Reactor | 3 | 12 Power | 6 | 3 | 9 |
+| Engine | 3 | — | 6 | 3 | 9 |
+| Sensor Array | 2 | — | 3 | 2 | 5 |
+| Medium Coilgun | 2 | — | 3 | 2 | 5 |
+| Point Defense Laser | 1 | — | 1 | 1 | 2 |
+| Drop Bay | 2 | 4 units | 3 | 2 | 5 |
+| Life Support | 2 | 2 departments | 3 | 2 | 5 |
+| Armor (32 points) | — | — | 8 | 2 | 10 |
+| **Totals** | | | **33** | **17** | **50** |
 
 ```text
 Total Mass     = 33 + 17 = 50
