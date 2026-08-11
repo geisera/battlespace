@@ -6,7 +6,7 @@
 
 ## Ship Construction
 
-A ship is the sum of its components. You choose the parts. The parts determine the mass. The mass determines the class. Size is a result, not a choice.
+A ship is the sum of its components. You choose the parts. The parts determine the mass. The mass determines the class — and how much power it takes to move it. Size is a result, not a choice.
 
 Build a ship in five steps:
 
@@ -20,9 +20,9 @@ Build a ship in five steps:
 
 ### 1. Buy Components
 
-Every component is bought at a **Rating** from 1 to 6. Rating measures capacity. A Rating 3 reactor produces three times the power of a Rating 1 reactor.
+Every component except the reactor is bought at a **Rating** from 1 to 6. Rating measures capacity. A Rating 3 engine is three times the engine of a Rating 1.
 
-Capacity rises in a straight line. Mass does not.
+Capacity rises in a straight line. Mass does not. Every step up costs more than the last.
 
 | Rating | Capacity | Mass | Superstructure Cost |
 | ---: | ---: | ---: | ---: |
@@ -33,18 +33,30 @@ Capacity rises in a straight line. Mass does not.
 | 5 | ×5 | 15 | 8 |
 | 6 | ×6 | 21 | 11 |
 
-Read the table this way: a Rating 4 reactor makes four times the power of a Rating 1 — and weighs ten times as much.
-
 **What each point of Rating buys:**
 
 | Component | Per point of Rating |
 | --- | --- |
-| Reactor | 4 Power |
-| Engine | Drives Movement Points (Section 5) |
+| Engine | Reduces the Power cost of Movement Points (Section 5) |
 | Sensor Array | +1 detection range band. Rating also caps Sensor Power. |
 | Cargo / Drop Bay | 2 bay units |
 | Life Support | Supports 1 crew department |
 | Weapon Mount | Mount Rating must equal or exceed the weapon's class |
+
+#### Reactors
+
+Reactors are chosen for their desired **Output** — the Power the ship generates each round. Mass and Superstructure follow from the output you demand:
+
+| Output | Mass | Superstructure Cost |
+| ---: | ---: | ---: |
+| 4 | 1 | 1 |
+| 8 | 3 | 2 |
+| 12 | 6 | 3 |
+| 16 | 10 | 5 |
+| 20 | 15 | 8 |
+| 24 | 21 | 11 |
+
+Doubling output from 12 to 24 more than triples the reactor's mass. The yard always takes its cut.
 
 **Every ship must carry:** one reactor, one engine, one sensor array, and life support.
 
@@ -89,22 +101,26 @@ Mass Factor = Total Mass ÷ 10, rounded up
 | Base Signature | Mass Factor |
 | Structure | Superstructure ÷ 2, rounded up |
 | Hull | Component Mass + Armor Mass |
-| Reactor Output | 4 × Reactor Rating |
-| Rotation | Engine Rating − Size Class + 2, minimum 1 |
+| Reactor Output | As purchased |
 
 ---
 
 ### 5. Movement
 
-Movement Points are computed fresh each round:
+Movement Points are bought each round by allocating Power to Propulsion. Mass sets the price. The engine discounts it.
 
 ```text
-Movement Points = (Engine Rating × Propulsion Power) ÷ Mass Factor, rounded down
+Power cost per Movement Point = Mass Factor ÷ Engine Rating, rounded up (minimum 1)
 ```
 
 Maximum Propulsion Power per round = 2 × Engine Rating.
 
-The chain that governs every design: more mass needs a bigger engine, a bigger engine needs a bigger reactor, and both need more Superstructure — all of which is more mass. Every hull is a truce with that spiral.
+**Spending Movement Points:**
+
+* Advance 1 hex: **1 MP**
+* Change heading by 1 hex-side: **1 MP**
+
+A corvette with a big engine buys movement for pocket change. A battleship pays full freight for every hex. The chain that governs every design: more mass raises the price of movement, a bigger engine lowers it but adds mass, a bigger engine demands a bigger reactor, and everything demands more Superstructure — which is more mass. Every hull is a truce with that spiral.
 
 ---
 
@@ -114,7 +130,7 @@ Rate the five departments — Command, Engineering, Gunnery, Sensors, Damage Con
 
 * Skill points available: **10 + (2 × Size Class)**.
 * Command Rating may not exceed the Command department's skill.
-* Life Support requires 1 Power per point of its Rating each round. A ship that cannot power life support plus 1 Propulsion is not spaceworthy.
+* Life Support requires 1 Power per point of its Rating each round. A ship that cannot power life support plus 1 Movement Point is not spaceworthy.
 
 ---
 
@@ -124,7 +140,7 @@ Rate the five departments — Command, Engineering, Gunnery, Sensors, Damage Con
 
 | Component | Rating | Capacity | Mass | Superstructure | Total Mass |
 | --- | ---: | --- | ---: | ---: | ---: |
-| Reactor | 3 | 12 Power | 6 | 3 | 9 |
+| Reactor | — | 12 Power | 6 | 3 | 9 |
 | Engine | 3 | — | 6 | 3 | 9 |
 | Sensor Array | 2 | — | 3 | 2 | 5 |
 | Medium Coilgun | 2 | — | 3 | 2 | 5 |
@@ -140,12 +156,11 @@ Mass Factor    = 50 ÷ 10 = 5
 Size Class     = 3          (36–70 band)
 Base Signature = 5
 Structure      = 17 ÷ 2 = 9
-Hull           = 33 
+Hull           = 33
 Reactor Output = 12
-Rotation       = 3 − 3 + 2 = 2
 ```
 
-At maximum burn — 6 Power to Propulsion — she makes (3 × 6) ÷ 5 = **3 Movement Points**, with 4 Power left after life support. Not enough to run everything. Strip the drop bays and armor and she is a Size 2 ship that moves like one. Load her for an assault and she moves like a barge. The manifest decides.
+Her Movement Points cost 5 ÷ 3 = **2 Power each**. At maximum burn — 6 Power to Propulsion — she buys **3 Movement Points**: enough to advance two hexes and swing one hex-side, with 4 Power left after life support. Not enough to run everything. Strip the drop bays and armor and her movement gets cheap. Load her for an assault and every hex costs. The manifest decides.
 
 ---
 
