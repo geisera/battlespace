@@ -10,7 +10,6 @@
     "structureMaximum": 10,
     "baseThrust": 5,
     "baseRotation": 2,
-    "heatMaximum": 12,
     "baseReactorOutput": 12,
     "baseSignature": 6
   },
@@ -26,8 +25,6 @@
   "resources": {
     "powerGenerated": 12,
     "powerUnallocated": 0,
-    "heatCurrent": 5,
-    "heatMaximum": 12,
     "fuelCurrent": 42
   },
 
@@ -74,8 +71,7 @@
       "condition": 10,
       "maximumCondition": 10,
       "operationalState": "operational",
-      "powerRequired": 0,
-      "heatGenerated": 2
+      "powerRequired": 0
     },
     {
       "systemId": "engine_01",
@@ -84,8 +80,7 @@
       "condition": 7,
       "maximumCondition": 10,
       "operationalState": "degraded",
-      "powerRequired": 3,
-      "heatGenerated": 2
+      "powerRequired": 3
     },
     {
       "systemId": "sensors_01",
@@ -94,8 +89,7 @@
       "condition": 8,
       "maximumCondition": 8,
       "operationalState": "operational",
-      "powerRequired": 2,
-      "heatGenerated": 0
+      "powerRequired": 2
     }
   ],
 

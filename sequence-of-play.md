@@ -31,7 +31,6 @@ Each game turn is resolved in 6 phases.
 3. Higher total gains initiative for this turn.
 4. Tie breaker order:
 	- Higher command rating
-	- Lower current heat signature
 	- Scenario priority or previous-turn holder (choose one as a standing rule)
 
 ### 4. Action Phase A (Initiative Window)
@@ -68,7 +67,7 @@ Special rule intent: this phase gives the second player a structured chance to c
 ### 6. End Phase
 
 1. Resolve delayed effects triggered at end of turn (arriving missiles, timed detonations, drift-only motion steps, etc.).
-2. Update heat, spent power, cooldown tracks, and damage control progress.
+2. Update spent power, cooldown tracks, and damage control progress.
 3. Clear temporary markers and advance turn counter.
 
 ## Table of Contents

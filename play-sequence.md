@@ -72,10 +72,6 @@ Rotation determines how many facing changes the ship may make during movement.
 
 Reactor Output determines how much power the ship may allocate each round.
 
-## Heat Maximum
-
-Heat Maximum determines how much heat the ship can tolerate before suffering penalties.
-
 ## Base Signature
 
 Base Signature determines how easy the ship is to detect.
@@ -176,7 +172,7 @@ Perform a Minor Action immediately before or after another ship’s action.
 
 Temporarily operate a disabled system, perform emergency thrust, immediately seal a breach, or take another exceptional action permitted by the referee.
 
-An Emergency Action usually generates 1 Heat or risks system damage.
+An Emergency Action risks system damage.
 
 Command Points purchase flexibility. They do not replace Power, ammunition, functioning systems, or required crew.
 
@@ -221,55 +217,9 @@ A disabled reactor produces no Power.
 
 ---
 
-# 6. Heat
-
-Ships gain Heat from:
-
-* Weapon fire
-* Hard burns
-* Active sensors
-* Reactor overloads
-* Emergency actions
-* Damaged systems
-
-At the end of each round, reduce Heat by the ship’s cooling rate. The default cooling rate is 2.
-
-## Heat Effects
-
-| Heat level                     | Effect     |
-| ------------------------------ | ---------- |
-| Below half maximum             | No effect  |
-| Half maximum or more           | Hot        |
-| Three-quarters maximum or more | Overheated |
-| Heat Maximum or more           | Critical   |
-
-### Hot
-
-No automatic penalty, but the ship gains +1 Signature.
-
-### Overheated
-
-* −1 to Engineering and Gunnery tests
-* +1 Signature
-* Hard Burn costs 1 additional Heat
-
-### Critical
-
-Immediately make an Overheat Test:
-
-```text
-2d6 + Engineering Skill
-```
-
-Target number: 8.
-
-On failure, one randomly selected powered system becomes degraded.
-
-Heat cannot normally exceed Heat Maximum by more than 3. At that point, the reactor automatically shuts down.
-
 ---
 
-# 7. Armor and Facing
+# 6. Armor and Facing
 
 Ships have four armor facings:
 
@@ -291,7 +241,7 @@ Dorsal and ventral attacks use the nearest logical facing unless the scenario us
 
 ---
 
-# 8. Systems
+# 7. Systems
 
 Systems have:
 
@@ -317,7 +267,7 @@ A system at 0 Condition becomes Disabled unless a critical effect destroys it.
 
 ---
 
-# 9. Round Sequence
+# 8. Round Sequence
 
 Each round follows this sequence:
 
@@ -333,7 +283,7 @@ Each round follows this sequence:
 
 ---
 
-# 10. Command Phase
+# 9. Command Phase
 
 Each ship performs the following:
 
@@ -387,7 +337,7 @@ A ship may change stance during the round for 1 CP.
 
 ---
 
-# 11. Detection Phase
+# 10. Detection Phase
 
 Each ship maintains its own contact level for each enemy.
 
@@ -468,7 +418,7 @@ A contact reduced below Detected is removed.
 
 ---
 
-# 12. Initiative Phase
+# 11. Initiative Phase
 
 Each ship rolls:
 
@@ -495,7 +445,7 @@ When multiple ships have the same Initiative, the ship with the higher Command R
 
 ---
 
-# 13. Maneuver Phase
+# 12. Maneuver Phase
 
 Each ship receives a movement activation.
 
@@ -546,8 +496,6 @@ Reduce Speed by up to available Thrust.
 
 Spend 1 additional Propulsion Power to make one extra facing change.
 
-Gain 1 Heat.
-
 ### Evasive Pattern
 
 Spend 1 Propulsion Power.
@@ -562,7 +510,7 @@ Spend 2 Propulsion Power.
 
 Increase Speed by 2 beyond normal acceleration.
 
-Gain 2 Heat and +2 Signature.
+Gain +2 Signature.
 
 ### Pivot
 
@@ -580,7 +528,7 @@ It retains current Speed and gains an additional −1 Signature.
 
 ---
 
-# 14. Action Phase
+# 13. Action Phase
 
 Ships activate from highest Initiative to lowest.
 
@@ -597,7 +545,6 @@ When a ship activates, it may perform:
 * Conduct an electronic-warfare attack
 * Perform an active scan
 * Make a major repair
-* Vent heat
 * Launch or recover small craft
 * Attempt boarding
 * Recharge shields, if used
@@ -624,7 +571,7 @@ When a ship activates, it may perform:
 
 ---
 
-# 15. Reactions
+# 14. Reactions
 
 Each ship receives one Reaction per round.
 
@@ -668,7 +615,7 @@ A ship may spend 1 CP to perform one additional Reaction.
 
 ---
 
-# 16. Weapon Attacks
+# 15. Weapon Attacks
 
 Resolve attacks in this order:
 
@@ -679,7 +626,7 @@ Resolve attacks in this order:
 5. Roll attack.
 6. Apply damage.
 7. Check for critical effects.
-8. Apply Heat and ammunition costs.
+8. Apply ammunition costs.
 
 ## Attack Roll
 
@@ -747,7 +694,6 @@ No modifier.
 ### Overcharge
 
 * +2 damage
-* Gain 2 additional Heat
 * On an attack roll of 2–4, the weapon loses 1 Condition
 
 ### Salvo
@@ -756,11 +702,11 @@ Fire multiple identical weapons as one attack.
 
 Gain +1 accuracy or +2 damage, chosen before rolling.
 
-All weapons expend ammunition and generate Heat.
+All weapons expend ammunition.
 
 ---
 
-# 17. Damage
+# 16. Damage
 
 Weapons have a Damage value and may have Penetration.
 
@@ -830,7 +776,7 @@ When Structure reaches 0, make a Catastrophic Damage Test.
 
 ---
 
-# 18. Critical Effects
+# 17. Critical Effects
 
 A critical effect occurs when:
 
@@ -887,7 +833,7 @@ If already Disabled, it is Destroyed.
 
 ---
 
-# 19. Missiles and Ordnance
+# 18. Missiles and Ordnance
 
 Missiles are placed on the map when launched.
 
@@ -932,7 +878,7 @@ If it loses all contact, it continues toward the target’s last known position 
 
 ---
 
-# 20. Electronic Warfare
+# 19. Electronic Warfare
 
 A ship with an electronic-warfare system may take one EW Major Action.
 
@@ -970,7 +916,7 @@ The false contact disappears when an enemy successfully detects it again.
 
 ---
 
-# 21. Damage Control Phase
+# 20. Damage Control Phase
 
 Resolve the following:
 
@@ -1028,18 +974,17 @@ Success removes one temporary crew Skill penalty.
 
 ---
 
-# 22. End Phase
+# 21. End Phase
 
 Each ship performs the following:
 
-1. Dissipate Heat.
-2. Reduce cooldowns by 1.
-3. Regenerate shields, if applicable.
-4. Remove expired status effects.
-5. Check morale.
-6. Check catastrophic damage.
-7. Score objectives.
-8. Advance the round counter.
+1. Reduce cooldowns by 1.
+2. Regenerate shields, if applicable.
+3. Remove expired status effects.
+4. Check morale.
+5. Check catastrophic damage.
+6. Score objectives.
+7. Advance the round counter.
 
 ## Morale Test
 
@@ -1066,7 +1011,7 @@ A second failure while Shaken may force withdrawal or surrender.
 
 ---
 
-# 23. Catastrophic Damage
+# 22. Catastrophic Damage
 
 When Structure reaches 0, roll:
 
@@ -1104,7 +1049,7 @@ The ship is immediately destroyed. Nearby ships may suffer damage based on Size 
 
 ---
 
-# 24. Example Ship Activation
+# 23. Example Ship Activation
 
 The *Archibald Henderson* has:
 
@@ -1147,7 +1092,7 @@ During Damage Control, the Engineering department attempts to correct the existi
 
 ---
 
-# 25. Recommended Starting Scale
+# 24. Recommended Starting Scale
 
 For an initial version of the game, use:
 
