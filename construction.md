@@ -6,25 +6,25 @@
 
 ## Ship Construction
 
-Nothing about a ship is chosen from a chart. A ship is the sum of what you bolt into it. Pick components, pay their mass, pay the superstructure that holds them together — and the hull that results tells you what class of ship you built. Size is a consequence, not a decision.
+A ship is the sum of its components. You choose the parts. The parts determine the mass. The mass determines the class. Size is a result, not a choice.
 
-Ships are built in five steps:
+Build a ship in five steps:
 
-1. Select components by Rating
-2. Pay Superstructure
-3. Total Mass
-4. Derive ship characteristics
-5. Assign crew and command
+1. Buy components.
+2. Buy Superstructure to secure them.
+3. Total the Mass.
+4. Derive the ship's characteristics.
+5. Assign crew.
 
 ---
 
-### 1. Components and Ratings
+### 1. Buy Components
 
-Every component — reactor, engine, sensors, weapons, tankage, bays — is purchased at a **Rating** from 1 to 6.
+Every component is bought at a **Rating** from 1 to 6. Rating measures capacity. A Rating 3 reactor produces three times the power of a Rating 1 reactor.
 
-Rating buys capacity linearly. Mass grows faster than capacity. This is the law of the yard: every step up costs more than the last one did.
+Capacity rises in a straight line. Mass does not.
 
-| Rating | Capacity Multiplier | Mass | Superstructure Cost |
+| Rating | Capacity | Mass | Superstructure Cost |
 | ---: | ---: | ---: | ---: |
 | 1 | ×1 | 1 | 1 |
 | 2 | ×2 | 3 | 2 |
@@ -33,90 +33,88 @@ Rating buys capacity linearly. Mass grows faster than capacity. This is the law 
 | 5 | ×5 | 15 | 8 |
 | 6 | ×6 | 21 | 11 |
 
-A Rating 4 reactor produces four times the power of a Rating 1 reactor — and weighs ten times as much before you've braced it to the frame.
+Read the table this way: a Rating 4 reactor makes four times the power of a Rating 1 — and weighs ten times as much.
 
-**Component capacities per point of Rating:**
+**What each point of Rating buys:**
 
-| Component | Capacity per Rating |
+| Component | Per point of Rating |
 | --- | --- |
-| Reactor | 4 Power output |
-| Engine | See Movement, below |
-| Sensor Array | +1 detection range band; Rating is max Sensor Power usable |
+| Reactor | 4 Power |
+| Engine | Drives Movement Points (Section 5) |
+| Sensor Array | +1 detection range band. Rating also caps Sensor Power. |
 | Cargo / Drop Bay | 2 bay units |
-| Life Support | Crew for one department per Rating |
-| Weapon Mount | By weapon class; a mount's Rating must equal or exceed the weapon's class |
+| Life Support | Supports 1 crew department |
+| Weapon Mount | Mount Rating must equal or exceed the weapon's class |
 
-Ships require at minimum: one reactor, one engine, one sensor array, and life support.
-
----
-
-### 2. Superstructure
-
-Superstructure is the frame — the keel, trusses, and hard mounting that hold the ship together under thrust.
-
-* Every component must be secured with Superstructure equal to its Superstructure Cost.
-* Each point of Superstructure adds **1 Mass** to the ship.
-* Additional Superstructure beyond the required minimum may be purchased to reinforce the frame (see Structure, below), at 1 Mass per point.
+**Every ship must carry:** one reactor, one engine, one sensor array, and life support.
 
 ---
 
-### 3. Mass
+### 2. Buy Superstructure
+
+Superstructure is the frame: keel, trusses, and mounting hardware.
+
+Three rules:
+
+1. Every component requires Superstructure equal to its Superstructure Cost.
+2. Every point of Superstructure adds 1 Mass.
+3. You may buy extra Superstructure to reinforce the frame. It raises Structure (Section 4) and adds Mass like any other point.
+
+---
+
+### 3. Total the Mass
 
 ```text
-Total Mass =
-sum of all component Mass
-+ total Superstructure
-+ Armor Mass
+Total Mass = Component Mass + Superstructure + Armor Mass
 ```
 
-**Armor** is plate bolted to the frame: every 4 points of armor = 1 Mass, and every 4 Mass of armor requires 1 Superstructure. Armor is distributed across the four facings; no facing may be 0.
+**Armor** is bought by the point and distributed across the four facings. No facing may be 0.
+
+* Every 4 points of armor = 1 Mass.
+* Every 4 Mass of armor requires 1 Superstructure.
 
 ---
 
-### 4. Derived Characteristics
+### 4. Derive Characteristics
 
-All ship characteristics fall out of Total Mass and installed components. Nothing is assigned.
+Nothing is assigned. Everything is computed.
 
 ```text
 Mass Factor = Total Mass ÷ 10, rounded up
 ```
 
-| Characteristic | Derivation |
+| Characteristic | Formula |
 | --- | --- |
-| **Size Class** | Total Mass ≤ 15: Size 1 · 16–35: Size 2 · 36–70: Size 3 · 71–120: Size 4 · 121+: Size 5 |
-| **Base Signature** | Mass Factor |
-| **Structure** | Total Superstructure ÷ 2, rounded up |
-| **Hull** | Total component Mass + Armor Mass (Superstructure excluded) |
-| **Reactor Output** | 4 × Reactor Rating |
-| **Rotation** | Engine Rating − Size Class + 2, minimum 1 |
-
-Bigger ships are easier to see, harder to turn, and hungrier — not because a chart says so, but because you built them that way.
+| Size Class | By Total Mass: 1–15 → Size 1 · 16–35 → Size 2 · 36–70 → Size 3 · 71–120 → Size 4 · 121+ → Size 5 |
+| Base Signature | Mass Factor |
+| Structure | Superstructure ÷ 2, rounded up |
+| Hull | Component Mass + Armor Mass |
+| Reactor Output | 4 × Reactor Rating |
+| Rotation | Engine Rating − Size Class + 2, minimum 1 |
 
 ---
 
 ### 5. Movement
 
-Movement Points are earned each round, not owned:
+Movement Points are computed fresh each round:
 
 ```text
-Movement Points =
-(Engine Rating × Power allocated to Propulsion)
-÷ Mass Factor, rounded down
+Movement Points = (Engine Rating × Propulsion Power) ÷ Mass Factor, rounded down
 ```
 
-Maximum Power allocated to Propulsion in one round = 2 × Engine Rating.
+Maximum Propulsion Power per round = 2 × Engine Rating.
 
-The same engine that flings a corvette across the map barely nudges a battleship. Mass punishes everything: a heavier ship needs a higher-rated engine to reach the same speed, which adds mass, which demands more reactor, which adds mass, which demands more superstructure — which adds mass. At every step the yard takes its cut. Somewhere in that spiral is the ship you can actually afford to move.
+The chain that governs every design: more mass needs a bigger engine, a bigger engine needs a bigger reactor, and both need more Superstructure — all of which is more mass. Every hull is a truce with that spiral.
 
 ---
 
-### 6. Crew and Command
+### 6. Assign Crew
 
-Assign the five crew departments (Command, Engineering, Gunnery, Sensors, Damage Control) skill ratings from 1 to 5. Total department skill points available = **10 + (2 × Size Class)**.
+Rate the five departments — Command, Engineering, Gunnery, Sensors, Damage Control — from 1 to 5.
 
-Command Rating may not exceed the Command department's skill.
-
-**Minimum operating load**: Life Support requires 1 Power per point of its Rating. A reactor unable to meet minimum operating load plus 1 Power of Propulsion is not spaceworthy.
+* Skill points available: **10 + (2 × Size Class)**.
+* Command Rating may not exceed the Command department's skill.
+* Life Support requires 1 Power per point of its Rating each round. A ship that cannot power life support plus 1 Propulsion is not spaceworthy.
 
 ---
 
@@ -132,22 +130,22 @@ Command Rating may not exceed the Command department's skill.
 | Medium Coilgun | 2 | — | 3 | 2 |
 | Point Defense Laser | 1 | — | 1 | 1 |
 | Drop Bay | 2 | 4 units | 3 | 2 |
-| Life Support | 2 | 2 departments+ | 3 | 2 |
+| Life Support | 2 | 2 departments | 3 | 2 |
 | Armor (32 points) | — | — | 8 | 2 |
 | **Totals** | | | **33** | **17** |
 
 ```text
-Total Mass       = 33 + 17 = 50
-Mass Factor      = 50 ÷ 10 = 5
-Size Class       = 3 (36–70)
-Base Signature   = 5
-Structure        = 17 ÷ 2 = 9
-Hull             = 33
-Reactor Output   = 12
-Rotation         = 3 − 3 + 2 = 2
+Total Mass     = 33 + 17 = 50
+Mass Factor    = 50 ÷ 10 = 5
+Size Class     = 3          (36–70 band)
+Base Signature = 5
+Structure      = 17 ÷ 2 = 9
+Hull           = 33 
+Reactor Output = 12
+Rotation       = 3 − 3 + 2 = 2
 ```
 
-At 6 Power to Propulsion (her engine's maximum): (3 × 6) ÷ 5 = **3 Movement Points** — and 4 Power left for everything else after life support. Strip the drop bays and armor and the *Henderson* is a Size 2 ship that runs like one. Load her for an assault and she's a frigate that fights like a barge. Nobody chose that. The manifest did.
+At maximum burn — 6 Power to Propulsion — she makes (3 × 6) ÷ 5 = **3 Movement Points**, with 4 Power left after life support. Not enough to run everything. Strip the drop bays and armor and she is a Size 2 ship that moves like one. Load her for an assault and she moves like a barge. The manifest decides.
 
 ---
 
