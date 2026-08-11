@@ -23,6 +23,19 @@ A corvette with a big engine buys movement for pocket change. A battleship pays 
 
 ---
 
+### Worked Example
+
+**SDC-468 *Archibald Henderson*, Valkyrie-class dropship** — Mass Factor 5, Engine Rating 3, Reactor Output 12.
+
+```text
+Power cost per MP = 5 ÷ 3 = 2 (rounded up)
+Maximum Propulsion Power = 2 × 3 = 6
+```
+
+At maximum burn she allocates 6 Power to Propulsion and buys **3 Movement Points** — enough to advance two hexes and swing one hex-side, or advance three hexes straight, or turn three hex-sides in place. That leaves 6 of her 12 Power for everything else. Not enough to run it all. Every hex she buys is a system she starves.
+
+---
+
 ## Table of Contents
 
 * [Sequence of Play](sequence-of-play.md)
