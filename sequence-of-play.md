@@ -77,7 +77,7 @@ Special rule intent: this phase gives the second player a structured chance to c
 * [Combat](combat.md)
 * [Damge](battle-damage.md)
 * [Minor Actions](minor-actions.md)
-* [Ship Construction](ship-construction.md)
+* [Ship Construction](construction.md)
 * [Weapons](weapons.md)
 * [Auxiliary Equipment](equipment.md)
 
