@@ -24,8 +24,7 @@
 
   "resources": {
     "powerGenerated": 12,
-    "powerUnallocated": 0,
-    "fuelCurrent": 42
+    "powerUnallocated": 0
   },
 
   "powerAllocation": {

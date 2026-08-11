@@ -42,12 +42,11 @@ A Rating 4 reactor produces four times the power of a Rating 1 reactor — and w
 | Reactor | 4 Power output |
 | Engine | See Movement, below |
 | Sensor Array | +1 detection range band; Rating is max Sensor Power usable |
-| Fuel Tankage | 14 Fuel |
 | Cargo / Drop Bay | 2 bay units |
 | Life Support | Crew for one department per Rating |
 | Weapon Mount | By weapon class; a mount's Rating must equal or exceed the weapon's class |
 
-Ships require at minimum: one reactor, one engine, one sensor array, life support, and fuel tankage.
+Ships require at minimum: one reactor, one engine, one sensor array, and life support.
 
 ---
 
@@ -132,24 +131,23 @@ Command Rating may not exceed the Command department's skill.
 | Sensor Array | 2 | — | 3 | 2 |
 | Medium Coilgun | 2 | — | 3 | 2 |
 | Point Defense Laser | 1 | — | 1 | 1 |
-| Fuel Tankage | 3 | 42 Fuel | 6 | 3 |
 | Drop Bay | 2 | 4 units | 3 | 2 |
 | Life Support | 2 | 2 departments+ | 3 | 2 |
 | Armor (32 points) | — | — | 8 | 2 |
-| **Totals** | | | **39** | **20** |
+| **Totals** | | | **33** | **17** |
 
 ```text
-Total Mass       = 39 + 20 = 59
-Mass Factor      = 59 ÷ 10 = 6
+Total Mass       = 33 + 17 = 50
+Mass Factor      = 50 ÷ 10 = 5
 Size Class       = 3 (36–70)
-Base Signature   = 6
-Structure        = 20 ÷ 2 = 10
-Hull             = 39
+Base Signature   = 5
+Structure        = 17 ÷ 2 = 9
+Hull             = 33
 Reactor Output   = 12
 Rotation         = 3 − 3 + 2 = 2
 ```
 
-At 6 Power to Propulsion (her engine's maximum): (3 × 6) ÷ 6 = **3 Movement Points** — and 4 Power left for everything else after life support. Strip the drop bays and armor and the *Henderson* is a Size 2 ship that runs like one. Load her for an assault and she's a frigate that fights like a barge. Nobody chose that. The manifest did.
+At 6 Power to Propulsion (her engine's maximum): (3 × 6) ÷ 5 = **3 Movement Points** — and 4 Power left for everything else after life support. Strip the drop bays and armor and the *Henderson* is a Size 2 ship that runs like one. Load her for an assault and she's a frigate that fights like a barge. Nobody chose that. The manifest did.
 
 ---
 
@@ -165,4 +163,4 @@ At 6 Power to Propulsion (her engine's maximum): (3 × 6) ÷ 6 = **3 Movement Po
 * [Weapons](weapons.md)
 * [Auxiliary Equipment](equipment.md)
 
----
+--- 
