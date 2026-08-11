@@ -36,7 +36,7 @@ Capacity rises in a straight line. Mass does not. Every step up costs more than 
 
 | Component | Per point of Rating |
 | --- | --- |
-| Engine | Reduces the Power cost of Movement Points (Section 5) |
+| Engine | Reduces the Power cost of Movement Points (see [Maneuver](maneuver.md)) |
 | Sensor Array | +1 detection range band. Rating also caps Sensor Power. |
 | Cargo / Drop Bay | 2 bay units |
 
@@ -101,25 +101,6 @@ Mass Factor = Total Mass ÷ 10, rounded up
 | Structure | Superstructure ÷ 2, rounded up |
 | Hull | Component Mass + Armor Mass |
 | Reactor Output | As purchased |
-
----
-
-### 5. Movement
-
-Movement Points are bought each round by allocating Power to Propulsion. Mass sets the price. The engine discounts it.
-
-```text
-Power cost per Movement Point = Mass Factor ÷ Engine Rating, rounded up (minimum 1)
-```
-
-Maximum Propulsion Power per round = 2 × Engine Rating.
-
-**Spending Movement Points:**
-
-* Advance 1 hex: **1 MP**
-* Change heading by 1 hex-side: **1 MP**
-
-A corvette with a big engine buys movement for pocket change. A battleship pays full freight for every hex. The chain that governs every design: more mass raises the price of movement, a bigger engine lowers it but adds mass, a bigger engine demands a bigger reactor, and everything demands more Superstructure — which is more mass. Every hull is a truce with that spiral.
 
 ---
 
