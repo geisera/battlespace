@@ -52,31 +52,25 @@ Ammunition is not tracked in this version of the rules.
 
 Missile Magazines store missile ammunition.
 
-Each Magazine has a **Capacity**. Different missile sizes consume different amounts of that Capacity.
+There are three magazine types:
 
-| Missile Type | Capacity per Missile |
-| --- | ---: |
-| Light Missile | 1 |
-| Medium Missile | 2 |
-| Heavy Missile | 4 |
+- Light Missile Magazine
+- Medium Missile Magazine
+- Heavy Missile Magazine
 
-Missile Magazines are purchased at Rating 1–6.
+Each magazine has a fixed ammunition capacity and may only store missiles of its own class.
 
-| Rating | Magazine Capacity | Light Missiles | Medium Missiles | Heavy Missiles | Component Mass | Superstructure | Total Mass |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 1 | 8 | 8 | 4 | 2 | 1 | 1 | 2 |
-| 2 | 16 | 16 | 8 | 4 | 3 | 2 | 5 |
-| 3 | 24 | 24 | 12 | 6 | 6 | 3 | 9 |
-| 4 | 32 | 32 | 16 | 8 | 10 | 5 | 15 |
-| 5 | 40 | 40 | 20 | 10 | 15 | 8 | 23 |
-| 6 | 48 | 48 | 24 | 12 | 21 | 11 | 32 |
+| Magazine | Missiles Stored | Component Mass | Superstructure | Total Mass |
+| --- | ---: | ---: | ---: | ---: |
+| Light Missile Magazine | 12 | 2 | 1 | 3 |
+| Medium Missile Magazine | 6 | 2 | 1 | 3 |
+| Heavy Missile Magazine | 3 | 2 | 1 | 3 |
 
-A Magazine may contain any mix of compatible missiles.
+The three magazines have the same Mass and Superstructure requirement.
 
-The total Capacity used may not exceed the Magazine's Capacity.
+Larger missiles consume more internal volume, so heavier missile classes store fewer rounds.
 
 ```text
-Capacity Used =
-Light Missiles
-+ (Medium Missiles × 2)
-+ (Heavy Missiles × 4)
+Light Missile Magazine  = 12 Light Missiles
+Medium Missile Magazine = 6 Medium Missiles
+Heavy Missile Magazine  = 3 Heavy Missiles
