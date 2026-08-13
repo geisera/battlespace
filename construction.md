@@ -10,17 +10,18 @@ Every ship begins with a mass.
 
 Choose how large a ship you intend to build. That choice determines its Size Class, Base Signature, minimum propulsion requirement, and the amount of machinery and protection the hull can carry.
 
-You then spend that mass on engines, reactor, weapons, sensors, armor, and Superstructure.
+You then choose a reactor and spend the remaining mass on engines, weapons, sensors, armor, and Superstructure.
 
 A ship cannot exceed its chosen **Design Mass**.
 
-Build a ship in five steps:
+Build a ship in six steps:
 
 1. Choose Design Mass.
 2. Derive Mass Factor, Size Class, Minimum Engine Rating, and Propulsion Requirement.
-3. Install components.
-4. Install Superstructure and armor.
-5. Derive the final characteristics.
+3. Choose Reactor.
+4. Install components.
+5. Install Superstructure and armor.
+6. Derive the final characteristics.
 
 ---
 
@@ -93,7 +94,7 @@ Other effects may modify Signature during play.
 
 ---
 
-## Minimum Engine Rating
+### Minimum Engine Rating
 
 Every ship must install enough propulsion for its Design Mass.
 
@@ -107,7 +108,7 @@ The ship's **Total Engine Rating** must equal or exceed this value.
 
 ---
 
-## Propulsion Requirement
+### Propulsion Requirement
 
 Design Mass determines how much **Propulsion Capacity** is required to generate 1 Movement Point.
 
@@ -146,7 +147,84 @@ As Design Mass increases, both Minimum Engine Rating and Propulsion Requirement 
 
 ---
 
-## 3. Install Components
+## 3. Choose Reactor
+
+Choose the ship's **Reactor**.
+
+The Reactor generates the ship's available **Power** each round.
+
+Power is allocated among propulsion, shields, sensors, weapons, and other powered systems.
+
+A larger Reactor provides more Power, but it also consumes more Design Mass.
+
+### Available Reactors
+
+| Reactor Output | Component Mass | Superstructure | Total Mass |
+| -------------: | -------------: | -------------: | ---------: |
+|              4 |              1 |              1 |          2 |
+|              8 |              3 |              2 |          5 |
+|             12 |              6 |              3 |          9 |
+|             16 |             10 |              5 |         15 |
+|             20 |             15 |              8 |         23 |
+|             24 |             21 |             11 |         32 |
+
+**Reactor Output** is the amount of Power generated each round.
+
+**Component Mass** is the Mass of the Reactor itself.
+
+**Superstructure** is the Mass required to mount and support the Reactor.
+
+**Total Mass** is the combined Mass of the Reactor and its required Superstructure.
+
+```text
+Total Reactor Mass =
+Component Mass + Superstructure
+```
+
+A ship may carry one Reactor.
+
+The Reactor's Total Mass counts against Design Mass.
+
+### Minimum Reactor Requirement
+
+The Reactor must provide enough Power for the completed ship to generate at least **1 MP**.
+
+The ship's propulsion system generates:
+
+```text
+Propulsion Capacity =
+Propulsion Power × Total Engine Rating
+```
+
+To generate 1 MP:
+
+```text
+Propulsion Capacity ≥ Propulsion Requirement
+```
+
+Therefore:
+
+```text
+Minimum Propulsion Power =
+Propulsion Requirement ÷ Total Engine Rating,
+rounded up
+```
+
+The chosen Reactor must have Output equal to or greater than Minimum Propulsion Power.
+
+```text
+Reactor Output ≥ Minimum Propulsion Power
+```
+
+Because Total Engine Rating is selected in Step 4, verify this requirement after installing the ship's Engines.
+
+A Reactor that only meets the minimum requirement may leave little Power for shields, sensors, weapons, or other systems.
+
+The Reactor is the ship's total Power budget.
+
+---
+
+## 4. Install Components
 
 Components consume part of the ship's Design Mass.
 
@@ -184,7 +262,7 @@ Every ship must contain:
 
 ---
 
-## Engines
+### Engines
 
 Engines determine how much Propulsion Capacity the ship generates from Power allocated to propulsion.
 
@@ -243,64 +321,21 @@ A ship with Total Engine Rating 6 allocating the same 4 Power generates:
 = 24 Propulsion Capacity
 ```
 
-Engines therefore do not reduce a movement cost.
-
-They increase the amount of propulsion produced from each point of Reactor Power.
+Engines increase the amount of propulsion produced from each point of Reactor Power.
 
 ---
 
-## Reactors
+### Sensor Arrays
 
-The Reactor generates the ship's Power each round.
+Sensor Arrays are purchased at Rating 1–6.
 
-Choose the desired Reactor Output.
+Each point of Sensor Rating increases detection range by one range band.
 
-| Output | Component Mass | Superstructure | Total Mass |
-| -----: | -------------: | -------------: | ---------: |
-|      4 |              1 |              1 |          2 |
-|      8 |              3 |              2 |          5 |
-|     12 |              6 |              3 |          9 |
-|     16 |             10 |              5 |         15 |
-|     20 |             15 |              8 |         23 |
-|     24 |             21 |             11 |         32 |
-
-A ship carries one Reactor.
-
-Reactor Output is divided among systems during play.
-
-Typical uses include:
-
-* propulsion;
-* shields;
-* sensors;
-* weapons;
-* special systems.
-
-### Minimum Propulsion Requirement
-
-Every completed ship must be capable of generating at least **1 Movement Point**.
-
-A ship generates 1 MP when its Propulsion Capacity equals or exceeds its Propulsion Requirement.
-
-Therefore, a legal ship must be capable of satisfying:
-
-```text
-Reactor Output × Total Engine Rating
-≥ Propulsion Requirement
-```
-
-A design that cannot satisfy this requirement is invalid.
-
-The designer must:
-
-* increase Total Engine Rating;
-* install a larger Reactor;
-* choose a lower Design Mass;
-* or use some combination of these changes.
+Sensor Rating also caps the amount of Power that may be allocated to sensors.
 
 ---
 
-## 4. Install Superstructure and Armor
+## 5. Install Superstructure and Armor
 
 ### Superstructure
 
@@ -339,7 +374,7 @@ Armor Mass and its supporting Superstructure both count against Design Mass.
 
 ---
 
-## Mass Budget
+### Mass Budget
 
 All installed equipment must fit within the Design Mass.
 
@@ -371,22 +406,35 @@ It makes the ship tougher.
 
 ---
 
-## 5. Derive Final Characteristics
+## 6. Derive Final Characteristics
 
 After all components are installed, calculate the ship's final characteristics.
 
-| Characteristic         | Formula                        |
-| ---------------------- | ------------------------------ |
-| Design Mass            | Chosen during Step 1           |
-| Mass Factor            | Design Mass ÷ 10, rounded up   |
-| Size Class             | Determined by Design Mass      |
-| Base Signature         | Mass Factor                    |
-| Minimum Engine Rating  | Mass Factor ÷ 2, rounded up    |
-| Total Engine Rating    | Sum of all Engine Ratings      |
-| Propulsion Requirement | Mass Factor × 0.75, rounded up |
-| Reactor Output         | As purchased                   |
-| Structure              | Superstructure ÷ 2, rounded up |
-| Hull Mass              | Design Mass − Used Mass        |
+| Characteristic           | Formula                                                  |
+| ------------------------ | -------------------------------------------------------- |
+| Design Mass              | Chosen during Step 1                                     |
+| Mass Factor              | Design Mass ÷ 10, rounded up                             |
+| Size Class               | Determined by Design Mass                                |
+| Base Signature           | Mass Factor                                              |
+| Minimum Engine Rating    | Mass Factor ÷ 2, rounded up                              |
+| Total Engine Rating      | Sum of all Engine Ratings                                |
+| Propulsion Requirement   | Mass Factor × 0.75, rounded up                           |
+| Minimum Propulsion Power | Propulsion Requirement ÷ Total Engine Rating, rounded up |
+| Reactor Output           | As purchased                                             |
+| Structure                | Superstructure ÷ 2, rounded up                           |
+| Hull Mass                | Design Mass − Used Mass                                  |
+
+A completed design must satisfy both propulsion requirements:
+
+```text
+Total Engine Rating ≥ Minimum Engine Rating
+```
+
+and:
+
+```text
+Reactor Output ≥ Minimum Propulsion Power
+```
 
 ---
 
@@ -498,7 +546,20 @@ Minimum Engine Rating = 3
 Propulsion Requirement = 4
 ```
 
-### Step 3: Components
+### Step 3: Reactor
+
+The designer selects a 12-Power Reactor.
+
+| Reactor Output | Component Mass | Superstructure | Total Mass |
+| -------------: | -------------: | -------------: | ---------: |
+|             12 |              6 |              3 |          9 |
+
+```text
+Reactor Output = 12
+Reactor Total Mass = 9
+```
+
+### Step 4: Components
 
 | Component           | Rating | Capacity | Component Mass | Superstructure | Total Mass |
 | ------------------- | -----: | -------- | -------------: | -------------: | ---------: |
@@ -516,6 +577,17 @@ Total Engine Rating = 3
 Minimum Engine Rating = 3
 ```
 
+Minimum Propulsion Power is:
+
+```text
+Propulsion Requirement ÷ Total Engine Rating
+= 4 ÷ 3
+= 1.33
+rounded up = 2 Power
+```
+
+The 12-Power Reactor easily satisfies this requirement.
+
 The ship has:
 
 ```text
@@ -523,6 +595,8 @@ The ship has:
 ```
 
 remaining for Armor, additional Superstructure, and Hull Mass.
+
+### Step 5: Armor and Superstructure
 
 If the designer installs 32 Armor Points:
 
@@ -543,14 +617,22 @@ Used Mass             = 40
 Hull Mass             = 5
 ```
 
-### Propulsion
-
-The ship has:
+### Step 6: Final Characteristics
 
 ```text
-Total Engine Rating = 3
-Propulsion Requirement = 4
+Design Mass             = 45
+Mass Factor              = 5
+Size Class               = 3
+Base Signature           = 5
+Minimum Engine Rating    = 3
+Total Engine Rating      = 3
+Propulsion Requirement   = 4
+Minimum Propulsion Power = 2
+Reactor Output            = 12
+Hull Mass                 = 5
 ```
+
+### Propulsion
 
 If the captain allocates 4 Power to propulsion:
 
@@ -605,7 +687,7 @@ As Design Mass increases:
 * Base Signature increases.
 * More Mass becomes available for weapons, armor, systems, and structure.
 
-More Engine Rating generates more propulsion from each point of Power, but Engines consume Mass.
+A larger Engine installation produces more propulsion from each point of Power, but Engines consume Mass.
 
 A larger Reactor supplies more Power, but it consumes Mass.
 
