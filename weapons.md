@@ -30,6 +30,7 @@ Weapons are purchased individually. They do not use the 1–6 component Rating t
 ```text
 Total Weapon Mass =
 Component Mass + Superstructure
+```
 
 ### Missile Launchers
 
