@@ -10,7 +10,7 @@ Every ship begins with a mass.
 
 Choose how large a ship you intend to build. That choice determines its Size Class, basic signature, propulsion requirements, and the amount of machinery and protection the hull can carry.
 
-You then spend that mass on engines, reactor, weapons, sensors, armor, bays, and Superstructure.
+You then spend that mass on engines, reactor, weapons, sensors, armor, and Superstructure.
 
 A ship cannot exceed its chosen **Design Mass**.
 
@@ -60,6 +60,7 @@ Mass Factor is a simplified measure of the ship's overall mass for game purposes
 
 It is used to determine:
 
+* Minimum Engine Rating;
 * Movement Power Cost;
 * Base Signature;
 * other rules that explicitly use ship mass.
@@ -80,26 +81,27 @@ Other effects may modify Signature during play.
 
 Components consume part of the ship's Design Mass.
 
-Every component except the reactor is purchased at a **Rating** from 1 to 6.
+Every rated component is purchased at a **Rating** from 1 to 6.
 
-| Rating | Capacity | Mass | Superstructure Cost |
-| -----: | -------: | ---: | ------------------: |
-|      1 |       ×1 |    1 |                   1 |
-|      2 |       ×2 |    3 |                   2 |
-|      3 |       ×3 |    6 |                   3 |
-|      4 |       ×4 |   10 |                   5 |
-|      5 |       ×5 |   15 |                   8 |
-|      6 |       ×6 |   21 |                  11 |
+| Rating | Capacity | Component Mass | Superstructure | Total Mass |
+| -----: | -------: | -------------: | -------------: | ---------: |
+|      1 |       ×1 |              1 |              1 |          2 |
+|      2 |       ×2 |              3 |              2 |          5 |
+|      3 |       ×3 |              6 |              3 |          9 |
+|      4 |       ×4 |             10 |              5 |         15 |
+|      5 |       ×5 |             15 |              8 |         23 |
+|      6 |       ×6 |             21 |             11 |         32 |
+
+**Total Mass** includes both the component and the Superstructure required to mount it.
 
 ### Component Effects
 
-| Component        | Effect                                                       |
-| ---------------- | ------------------------------------------------------------ |
-| Engine           | Contributes to Total Engine Rating                           |
-| Sensor Array     | +1 detection range band per Rating; Rating caps Sensor Power |
-| Cargo / Drop Bay | 2 bay units per Rating                                       |
+| Component    | Effect                                                       |
+| ------------ | ------------------------------------------------------------ |
+| Engine       | Contributes to Total Engine Rating                           |
+| Sensor Array | +1 detection range band per Rating; Rating caps Sensor Power |
 
-Weapons are purchased individually. Each weapon lists its own Mass and Superstructure Cost.
+Weapons are purchased individually. Each weapon lists its Component Mass, Superstructure requirement, and Total Mass.
 
 See [Weapons](weapons.md).
 
@@ -115,9 +117,9 @@ Every ship must contain:
 
 Engines determine how efficiently Reactor Power generates Movement Points.
 
-A ship may carry any number of Engines.
+A ship may carry more than one Engine.
 
-Add their Ratings together.
+Add the Ratings of all installed Engines together.
 
 ```text
 Total Engine Rating =
@@ -129,18 +131,56 @@ Example:
 ```text
 Rating 4 Engine
 Rating 3 Engine
-Rating 2 Engine
 
-Total Engine Rating = 9
+Total Engine Rating = 7
 ```
 
 Individual Engines are limited to Rating 1–6.
 
 Total Engine Rating has no inherent maximum.
 
+### Minimum Engine Rating
+
+Every ship must install enough propulsion for its Design Mass.
+
+```text
+Minimum Engine Rating =
+Mass Factor ÷ 3,
+rounded up
+```
+
+The ship's **Total Engine Rating** must equal or exceed this value.
+
+| Design Mass | Mass Factor | Minimum Engine Rating |
+| ----------: | ----------: | --------------------: |
+|        1–10 |           1 |                     1 |
+|       11–20 |           2 |                     1 |
+|       21–30 |           3 |                     1 |
+|       31–40 |           4 |                     2 |
+|       41–50 |           5 |                     2 |
+|       51–60 |           6 |                     2 |
+|       61–70 |           7 |                     3 |
+|       71–80 |           8 |                     3 |
+|       81–90 |           9 |                     3 |
+|      91–100 |          10 |                     4 |
+|     101–110 |          11 |                     4 |
+|     111–120 |          12 |                     4 |
+|     121–130 |          13 |                     5 |
+|     131–140 |          14 |                     5 |
+|     141–150 |          15 |                     5 |
+|     151–160 |          16 |                     6 |
+|     161–170 |          17 |                     6 |
+|     171–180 |          18 |                     6 |
+|     181–190 |          19 |                     7 |
+|     191–200 |          20 |                     7 |
+
+For ships above Mass 200, continue the same progression.
+
+Because individual Engines cannot exceed Rating 6, sufficiently large ships require multiple Engines.
+
 ### Movement Power Cost
 
-Once the engines are selected, calculate the Power required to generate one Movement Point.
+After the Engines are selected, calculate the Power required to generate one Movement Point.
 
 ```text
 Movement Power Cost =
@@ -166,14 +206,14 @@ The Reactor generates the ship's Power each round.
 
 Choose the desired Reactor Output.
 
-| Output | Mass | Superstructure Cost |
-| -----: | ---: | ------------------: |
-|      4 |    1 |                   1 |
-|      8 |    3 |                   2 |
-|     12 |    6 |                   3 |
-|     16 |   10 |                   5 |
-|     20 |   15 |                   8 |
-|     24 |   21 |                  11 |
+| Output | Component Mass | Superstructure | Total Mass |
+| -----: | -------------: | -------------: | ---------: |
+|      4 |              1 |              1 |          2 |
+|      8 |              3 |              2 |          5 |
+|     12 |              6 |              3 |          9 |
+|     16 |             10 |              5 |         15 |
+|     20 |             15 |              8 |         23 |
+|     24 |             21 |             11 |         32 |
 
 A ship carries one Reactor.
 
@@ -209,11 +249,11 @@ The designer must increase Engine Rating, increase Reactor Output, or choose a l
 
 Superstructure represents the ship's keel, trusses, component mounts, and load-bearing frame.
 
-Every component requires Superstructure equal to its listed Superstructure Cost.
+Every component requires Superstructure equal to its listed Superstructure requirement.
 
 ```text
 Required Superstructure =
-sum of all Component Superstructure Costs
+sum of all Component Superstructure requirements
 ```
 
 Every point of Superstructure consumes 1 Mass.
@@ -278,17 +318,18 @@ It makes the ship tougher.
 
 After all components are installed, calculate the ship's final characteristics.
 
-| Characteristic      | Formula                                                  |
-| ------------------- | -------------------------------------------------------- |
-| Design Mass         | Chosen during Step 1                                     |
-| Mass Factor         | Design Mass ÷ 10, rounded up                             |
-| Size Class          | Determined by Design Mass                                |
-| Base Signature      | Mass Factor                                              |
-| Total Engine Rating | Sum of all Engine Ratings                                |
-| Movement Power Cost | Mass Factor ÷ Total Engine Rating, rounded up; minimum 1 |
-| Reactor Output      | As purchased                                             |
-| Structure           | Superstructure ÷ 2, rounded up                           |
-| Hull Mass           | Design Mass − Used Mass                                  |
+| Characteristic        | Formula                                                  |
+| --------------------- | -------------------------------------------------------- |
+| Design Mass           | Chosen during Step 1                                     |
+| Mass Factor           | Design Mass ÷ 10, rounded up                             |
+| Size Class            | Determined by Design Mass                                |
+| Base Signature        | Mass Factor                                              |
+| Minimum Engine Rating | Mass Factor ÷ 3, rounded up                              |
+| Total Engine Rating   | Sum of all Engine Ratings                                |
+| Movement Power Cost   | Mass Factor ÷ Total Engine Rating, rounded up; minimum 1 |
+| Reactor Output        | As purchased                                             |
+| Structure             | Superstructure ÷ 2, rounded up                           |
+| Hull Mass             | Design Mass − Used Mass                                  |
 
 ---
 
@@ -360,80 +401,48 @@ A Design Mass of 45 places the ship in **Size Class 3**.
 ```text
 Size Class = 3
 Base Signature = 5
+Minimum Engine Rating = 2
 ```
 
 ### Step 3: Components
 
-| Component           | Rating | Capacity |   Mass | Superstructure |
-| ------------------- | -----: | -------- | -----: | -------------: |
-| Reactor             |      — | 12 Power |      6 |              3 |
-| Engine              |      3 | —        |      6 |              3 |
-| Sensor Array        |      2 | —        |      3 |              2 |
-| Medium Coilgun      |      — | —        |      3 |              2 |
-| Point Defense Laser |      — | —        |      1 |              1 |
-| Drop Bay            |      2 | 4 units  |      3 |              2 |
-| **Components**      |        |          | **22** |         **13** |
+| Component           | Rating | Capacity | Component Mass | Superstructure | Total Mass |
+| ------------------- | -----: | -------- | -------------: | -------------: | ---------: |
+| Reactor             |      — | 12 Power |              6 |              3 |          9 |
+| Engine              |      3 | —        |              6 |              3 |          9 |
+| Sensor Array        |      2 | —        |              3 |              2 |          5 |
+| Medium Coilgun      |      — | —        |              3 |              2 |          5 |
+| Point Defense Laser |      — | —        |              1 |              1 |          2 |
+| **Totals**          |        |          |         **19** |         **11** |     **30** |
 
-Required Superstructure adds another 13 Mass.
+The Rating 3 Engine exceeds the ship's minimum required Engine Rating of 2.
+
+The ship has:
 
 ```text
-Component Mass = 22
-Superstructure = 13
-
-Used Mass = 35
+45 - 30 = 15 Mass
 ```
 
-The designer therefore has:
+remaining for Armor, additional Superstructure, and Hull Mass.
+
+If the designer installs 32 Armor Points:
 
 ```text
-45 - 35 = 10 Mass
-```
-
-remaining for Armor and Hull Mass.
-
-If 8 Mass is used for Armor:
-
-```text
-Armor = 32 points
 Armor Mass = 8
+Armor Superstructure = 2
 ```
 
-The armor requires 2 additional Superstructure.
+The finished allocation becomes:
 
 ```text
-Used Mass =
-22 Component
-+ 15 Superstructure
-+ 8 Armor
-= 45
+Components           = 19
+Component Structure  = 11
+Armor                 = 8
+Armor Structure       = 2
+
+Used Mass             = 40
+Hull Mass             = 5
 ```
-
-The ship completely fills its Design Mass.
-
-```text
-Hull Mass = 0
-```
-
-If the designer instead installs only 16 Armor Points:
-
-```text
-Armor Mass = 4
-Armor Superstructure = 1
-
-Used Mass =
-22 + 14 + 4
-= 40
-```
-
-The remaining 5 Mass becomes Hull Mass.
-
-```text
-Hull Mass = 5
-```
-
-The player has made a construction choice:
-
-**more directional protection, or more general hull durability.**
 
 ### Propulsion
 
