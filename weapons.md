@@ -46,7 +46,7 @@ Each launch requires the listed Power.
 
 Missiles may remain in play after launch and may be intercepted by Point Defense.
 
-Ammunition is not tracked in this version of the rules.
+Missile launchers require missiles to launch. These are provisioned via missile magazines.
 
 ### Missile Magazines
 
