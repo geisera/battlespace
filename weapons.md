@@ -30,3 +30,19 @@ Weapons are purchased individually. They do not use the 1–6 component Rating t
 ```text
 Total Weapon Mass =
 Component Mass + Superstructure
+
+### Missile Launchers
+
+| Weapon | Component Mass | Superstructure | Total Mass | Power | Damage | Range | Arc | Special |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
+| Light Missile Launcher | 2 | 1 | 3 | 1 | 4 | 5 | 360° | Missile |
+| Medium Missile Launcher | 3 | 2 | 5 | 1 | 6 | 6 | 360° | Missile |
+| Heavy Missile Launcher | 6 | 3 | 9 | 2 | 9 | 7 | 360° | Missile |
+
+Missile Launchers fire self-propelled weapons.
+
+Each launch requires the listed Power.
+
+Missiles may remain in play after launch and may be intercepted by Point Defense.
+
+Ammunition is not tracked in this version of the rules.
