@@ -8,7 +8,7 @@
 
 Every ship begins with a mass.
 
-Choose how large a ship you intend to build. That choice determines its Size Class, basic signature, propulsion requirements, and the amount of machinery and protection the hull can carry.
+Choose how large a ship you intend to build. That choice determines its Size Class, basic signature, minimum propulsion requirement, baseline movement cost, and the amount of machinery and protection the hull can carry.
 
 You then spend that mass on engines, reactor, weapons, sensors, armor, and Superstructure.
 
@@ -17,7 +17,7 @@ A ship cannot exceed its chosen **Design Mass**.
 Build a ship in five steps:
 
 1. Choose Design Mass.
-2. Derive Mass Factor and Size Class.
+2. Derive Mass Factor, Size Class, Minimum Engine Rating, and Base MPC.
 3. Install components.
 4. Install Superstructure and armor.
 5. Derive the final characteristics.
@@ -44,16 +44,20 @@ Design Mass may be any whole number of Mass points.
 |      71–120 |     Size 4 |
 |        121+ |     Size 5 |
 
-Choosing a larger ship gives you more Mass for equipment, armor, weapons, and structure. Larger ships also require more propulsion and have a greater Base Signature.
+Choosing a larger ship gives you more Mass for equipment, armor, weapons, and structure.
+
+Larger ships also require larger engines, more Power to move, and have a greater Base Signature.
 
 ---
 
 ## 2. Derive Mass Characteristics
 
-Calculate **Mass Factor** from Design Mass.
+Calculate the ship's **Mass Factor**.
 
 ```text
-Mass Factor = Design Mass ÷ 10, rounded up
+Mass Factor =
+Design Mass ÷ 10,
+rounded up
 ```
 
 Mass Factor is a simplified measure of the ship's overall mass for game purposes.
@@ -61,9 +65,21 @@ Mass Factor is a simplified measure of the ship's overall mass for game purposes
 It is used to determine:
 
 * Minimum Engine Rating;
-* Movement Power Cost;
+* Base Movement Power Cost;
 * Base Signature;
 * other rules that explicitly use ship mass.
+
+### Size Class
+
+Size Class is determined directly from Design Mass.
+
+| Design Mass | Size Class |
+| ----------: | ---------: |
+|        1–15 |          1 |
+|       16–35 |          2 |
+|       36–70 |          3 |
+|      71–120 |          4 |
+|        121+ |          5 |
 
 ### Base Signature
 
@@ -71,9 +87,64 @@ It is used to determine:
 Base Signature = Mass Factor
 ```
 
-Larger ships are inherently easier to detect.
+Larger ships are easier to detect.
 
 Other effects may modify Signature during play.
+
+---
+
+## Minimum Engine Rating
+
+Every ship must install enough propulsion for its Design Mass.
+
+```text
+Minimum Engine Rating =
+Mass Factor ÷ 2,
+rounded up
+```
+
+The ship's **Total Engine Rating** must equal or exceed this value.
+
+### Base Movement Power Cost
+
+Design Mass also determines the ship's baseline cost to generate Movement Points.
+
+```text
+Base MPC =
+Mass Factor × 0.75,
+rounded up
+```
+
+**MPC** means **Movement Power Cost**.
+
+Base MPC is the Power required to generate 1 MP before any benefit from engines above the minimum requirement.
+
+| Design Mass | Mass Factor | Minimum Engine Rating | Base MPC |
+| ----------: | ----------: | --------------------: | -------: |
+|        1–10 |           1 |                     1 |        1 |
+|       11–20 |           2 |                     1 |        2 |
+|       21–30 |           3 |                     2 |        3 |
+|       31–40 |           4 |                     2 |        3 |
+|       41–50 |           5 |                     3 |        4 |
+|       51–60 |           6 |                     3 |        5 |
+|       61–70 |           7 |                     4 |        6 |
+|       71–80 |           8 |                     4 |        6 |
+|       81–90 |           9 |                     5 |        7 |
+|      91–100 |          10 |                     5 |        8 |
+|     101–110 |          11 |                     6 |        9 |
+|     111–120 |          12 |                     6 |        9 |
+|     121–130 |          13 |                     7 |       10 |
+|     131–140 |          14 |                     7 |       11 |
+|     141–150 |          15 |                     8 |       12 |
+|     151–160 |          16 |                     8 |       12 |
+|     161–170 |          17 |                     9 |       13 |
+|     171–180 |          18 |                     9 |       14 |
+|     181–190 |          19 |                    10 |       15 |
+|     191–200 |          20 |                    10 |       15 |
+
+For ships above Design Mass 200, continue the same progression.
+
+Both Minimum Engine Rating and Base MPC increase as Design Mass increases.
 
 ---
 
@@ -98,10 +169,12 @@ Every rated component is purchased at a **Rating** from 1 to 6.
 
 | Component    | Effect                                                       |
 | ------------ | ------------------------------------------------------------ |
-| Engine       | Contributes to Total Engine Rating                           |
+| Engine       | Contributes to Total Engine Rating and may reduce MPC        |
 | Sensor Array | +1 detection range band per Rating; Rating caps Sensor Power |
 
-Weapons are purchased individually. Each weapon lists its Component Mass, Superstructure requirement, and Total Mass.
+Weapons are purchased individually.
+
+Each weapon lists its Component Mass, Superstructure requirement, and Total Mass.
 
 See [Weapons](weapons.md).
 
@@ -115,7 +188,7 @@ Every ship must contain:
 
 ## Engines
 
-Engines determine how efficiently Reactor Power generates Movement Points.
+Engines determine how efficiently the ship converts Power into Movement Points.
 
 A ship may carry more than one Engine.
 
@@ -139,64 +212,79 @@ Individual Engines are limited to Rating 1–6.
 
 Total Engine Rating has no inherent maximum.
 
-### Minimum Engine Rating
-
-Every ship must install enough propulsion for its Design Mass.
+The ship's Total Engine Rating must equal or exceed its Minimum Engine Rating.
 
 ```text
-Minimum Engine Rating =
-Mass Factor ÷ 3,
-rounded up
+Total Engine Rating ≥ Minimum Engine Rating
 ```
 
-The ship's **Total Engine Rating** must equal or exceed this value.
+### Engine Bonus
 
-| Design Mass | Mass Factor | Minimum Engine Rating |
-| ----------: | ----------: | --------------------: |
-|        1–10 |           1 |                     1 |
-|       11–20 |           2 |                     1 |
-|       21–30 |           3 |                     1 |
-|       31–40 |           4 |                     2 |
-|       41–50 |           5 |                     2 |
-|       51–60 |           6 |                     2 |
-|       61–70 |           7 |                     3 |
-|       71–80 |           8 |                     3 |
-|       81–90 |           9 |                     3 |
-|      91–100 |          10 |                     4 |
-|     101–110 |          11 |                     4 |
-|     111–120 |          12 |                     4 |
-|     121–130 |          13 |                     5 |
-|     131–140 |          14 |                     5 |
-|     141–150 |          15 |                     5 |
-|     151–160 |          16 |                     6 |
-|     161–170 |          17 |                     6 |
-|     171–180 |          18 |                     6 |
-|     181–190 |          19 |                     7 |
-|     191–200 |          20 |                     7 |
+Engine Rating above the minimum improves movement efficiency.
 
-For ships above Mass 200, continue the same progression.
+```text
+Engine Bonus =
+Total Engine Rating - Minimum Engine Rating
+```
 
-Because individual Engines cannot exceed Rating 6, sufficiently large ships require multiple Engines.
+If Total Engine Rating equals Minimum Engine Rating, Engine Bonus is 0.
 
-### Movement Power Cost
+### Final Movement Power Cost
 
-After the Engines are selected, calculate the Power required to generate one Movement Point.
+Subtract Engine Bonus from Base MPC.
 
 ```text
 Movement Power Cost =
-Mass Factor ÷ Total Engine Rating,
-rounded up
+Base MPC - Engine Bonus
 ```
 
 Movement Power Cost can never be less than 1.
 
 ```text
-Minimum Movement Power Cost = 1
+Minimum MPC = 1
 ```
 
-A higher Total Engine Rating makes movement more Power-efficient.
+Each point of Engine Rating above the minimum therefore reduces MPC by 1, until MPC reaches 1.
 
-It does not directly grant Movement Points.
+Example:
+
+A Design Mass 100 ship has:
+
+```text
+Mass Factor = 10
+Minimum Engine Rating = 5
+Base MPC = 8
+```
+
+With Total Engine Rating 5:
+
+```text
+Engine Bonus = 0
+MPC = 8
+```
+
+With Total Engine Rating 6:
+
+```text
+Engine Bonus = 1
+MPC = 7
+```
+
+With Total Engine Rating 8:
+
+```text
+Engine Bonus = 3
+MPC = 5
+```
+
+With Total Engine Rating 10:
+
+```text
+Engine Bonus = 5
+MPC = 3
+```
+
+Additional engines therefore consume Mass but reduce the Power required to maneuver.
 
 ---
 
@@ -239,7 +327,14 @@ Reactor Output ≥ Movement Power Cost
 
 A design that cannot satisfy this requirement is invalid.
 
-The designer must increase Engine Rating, increase Reactor Output, or choose a lower Design Mass.
+The designer must:
+
+* increase Total Engine Rating;
+* install a larger Reactor;
+* choose a lower Design Mass;
+* or use some combination of these changes.
+
+Because Base MPC increases with Design Mass, larger ships require progressively more Power unless the designer invests additional Mass in propulsion.
 
 ---
 
@@ -318,18 +413,20 @@ It makes the ship tougher.
 
 After all components are installed, calculate the ship's final characteristics.
 
-| Characteristic        | Formula                                                  |
-| --------------------- | -------------------------------------------------------- |
-| Design Mass           | Chosen during Step 1                                     |
-| Mass Factor           | Design Mass ÷ 10, rounded up                             |
-| Size Class            | Determined by Design Mass                                |
-| Base Signature        | Mass Factor                                              |
-| Minimum Engine Rating | Mass Factor ÷ 3, rounded up                              |
-| Total Engine Rating   | Sum of all Engine Ratings                                |
-| Movement Power Cost   | Mass Factor ÷ Total Engine Rating, rounded up; minimum 1 |
-| Reactor Output        | As purchased                                             |
-| Structure             | Superstructure ÷ 2, rounded up                           |
-| Hull Mass             | Design Mass − Used Mass                                  |
+| Characteristic        | Formula                                     |
+| --------------------- | ------------------------------------------- |
+| Design Mass           | Chosen during Step 1                        |
+| Mass Factor           | Design Mass ÷ 10, rounded up                |
+| Size Class            | Determined by Design Mass                   |
+| Base Signature        | Mass Factor                                 |
+| Minimum Engine Rating | Mass Factor ÷ 2, rounded up                 |
+| Total Engine Rating   | Sum of all Engine Ratings                   |
+| Base MPC              | Mass Factor × 0.75, rounded up              |
+| Engine Bonus          | Total Engine Rating − Minimum Engine Rating |
+| Movement Power Cost   | Base MPC − Engine Bonus; minimum 1          |
+| Reactor Output        | As purchased                                |
+| Structure             | Superstructure ÷ 2, rounded up              |
+| Hull Mass             | Design Mass − Used Mass                     |
 
 ---
 
@@ -345,30 +442,22 @@ Propulsion Power ÷ Movement Power Cost,
 rounded down
 ```
 
+A ship cannot generate MP unless it allocates at least enough Power to meet its MPC.
+
 Example:
 
-A ship has:
-
 ```text
-Mass Factor = 5
-Total Engine Rating = 3
+Movement Power Cost = 4
+Propulsion Power = 12
 ```
 
-Its Movement Power Cost is:
+Therefore:
 
 ```text
-5 ÷ 3 = 1.67
-
-Movement Power Cost = 2
+12 ÷ 4 = 3 MP
 ```
 
-If the captain allocates 6 Power to propulsion:
-
-```text
-6 ÷ 2 = 3 MP
-```
-
-The ship receives **3 Movement Points** for that Action Phase.
+The ship generates **3 Movement Points**.
 
 Movement Points may be spent to change the ship's position or facing.
 
@@ -396,12 +485,32 @@ Mass Factor =
 = 5
 ```
 
-A Design Mass of 45 places the ship in **Size Class 3**.
+A Design Mass of 45 places the ship in Size Class 3.
 
 ```text
 Size Class = 3
 Base Signature = 5
-Minimum Engine Rating = 2
+```
+
+Minimum Engine Rating:
+
+```text
+5 ÷ 2 = 2.5
+rounded up = 3
+```
+
+Base MPC:
+
+```text
+5 × 0.75 = 3.75
+rounded up = 4
+```
+
+Therefore:
+
+```text
+Minimum Engine Rating = 3
+Base MPC = 4
 ```
 
 ### Step 3: Components
@@ -415,7 +524,19 @@ Minimum Engine Rating = 2
 | Point Defense Laser |      — | —        |              1 |              1 |          2 |
 | **Totals**          |        |          |         **19** |         **11** |     **30** |
 
-The Rating 3 Engine exceeds the ship's minimum required Engine Rating of 2.
+The Rating 3 Engine exactly meets the ship's Minimum Engine Rating.
+
+```text
+Total Engine Rating = 3
+Minimum Engine Rating = 3
+```
+
+Therefore:
+
+```text
+Engine Bonus = 0
+Movement Power Cost = 4
+```
 
 The ship has:
 
@@ -446,45 +567,75 @@ Hull Mass             = 5
 
 ### Propulsion
 
-The ship has one Rating 3 Engine.
+The ship has:
 
 ```text
-Total Engine Rating = 3
-Mass Factor = 5
-
-Movement Power Cost =
-5 ÷ 3
-= 2 Power
+Base MPC = 4
+Engine Bonus = 0
+Movement Power Cost = 4
 ```
 
-With 6 Power allocated to propulsion:
+If the captain allocates 8 Power to propulsion:
 
 ```text
-6 ÷ 2 = 3 MP
+8 ÷ 4 = 2 MP
 ```
 
-*Archibald Henderson* generates **3 Movement Points**.
+*Archibald Henderson* generates **2 Movement Points**.
+
+If the designer instead installs one additional Rating 1 Engine, Total Engine Rating becomes 4.
+
+```text
+Engine Bonus =
+4 - 3
+= 1
+```
+
+New MPC:
+
+```text
+4 - 1 = 3
+```
+
+With the same 8 Power allocated to propulsion:
+
+```text
+8 ÷ 3 = 2 MP
+```
+
+With 12 Power:
+
+```text
+12 ÷ 3 = 4 MP
+```
+
+The additional Engine consumes Mass but improves propulsion efficiency.
 
 ---
 
 # Design Principle
 
-Design Mass is the constraint.
+Design Mass is the primary constraint.
 
-Everything installed aboard the ship competes for that Mass.
+As Design Mass increases:
 
-More engines improve movement efficiency but consume Mass.
+* Minimum Engine Rating increases.
+* Base MPC increases.
+* Base Signature increases.
+* More Mass becomes available for weapons, armor, systems, and structure.
 
-A larger Reactor provides more Power but consumes Mass.
+Engines above the minimum reduce MPC, but they consume Mass.
 
-More armor improves protection but consumes Mass.
+A larger Reactor provides more Power, but it consumes Mass.
 
-More Superstructure improves structural integrity but consumes Mass.
+More armor improves protection, but it consumes Mass.
 
-More weapons increase firepower but consume Mass.
+More Superstructure improves structural integrity, but it consumes Mass.
+
+More weapons increase firepower, but they consume Mass.
 
 Anything left over becomes Hull.
 
-The player chooses the size of the ship first.
+The player chooses the ship's size first.
 
 Everything after that is compromise.
