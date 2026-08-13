@@ -47,3 +47,36 @@ Each launch requires the listed Power.
 Missiles may remain in play after launch and may be intercepted by Point Defense.
 
 Ammunition is not tracked in this version of the rules.
+
+### Missile Magazines
+
+Missile Magazines store missile ammunition.
+
+Each Magazine has a **Capacity**. Different missile sizes consume different amounts of that Capacity.
+
+| Missile Type | Capacity per Missile |
+| --- | ---: |
+| Light Missile | 1 |
+| Medium Missile | 2 |
+| Heavy Missile | 4 |
+
+Missile Magazines are purchased at Rating 1–6.
+
+| Rating | Magazine Capacity | Light Missiles | Medium Missiles | Heavy Missiles | Component Mass | Superstructure | Total Mass |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 1 | 8 | 8 | 4 | 2 | 1 | 1 | 2 |
+| 2 | 16 | 16 | 8 | 4 | 3 | 2 | 5 |
+| 3 | 24 | 24 | 12 | 6 | 6 | 3 | 9 |
+| 4 | 32 | 32 | 16 | 8 | 10 | 5 | 15 |
+| 5 | 40 | 40 | 20 | 10 | 15 | 8 | 23 |
+| 6 | 48 | 48 | 24 | 12 | 21 | 11 | 32 |
+
+A Magazine may contain any mix of compatible missiles.
+
+The total Capacity used may not exceed the Magazine's Capacity.
+
+```text
+Capacity Used =
+Light Missiles
++ (Medium Missiles × 2)
++ (Heavy Missiles × 4)
