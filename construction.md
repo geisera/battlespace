@@ -6,7 +6,7 @@
 
 ## Ship Construction
 
-A ship is the sum of its components. You choose the parts. The parts determine the mass. The mass determines the class — and how much power it takes to move it. Size is a result, not a choice.
+A ship is the sum of its components. You choose the parts. The parts determine the mass. The mass determines the class — and how much power it takes to move it.
 
 Build a ship in four steps:
 
